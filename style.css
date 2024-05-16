@@ -76,7 +76,7 @@ header{
     background-image: url('ComfyUI_temp_jxvmx_00002_.png');
     background-position: center; 
     background-size: cover;
-    filter: blur(5px); /* 應用模糊效果 */
+    filter: blur(0px); /* 應用模糊效果 */
     padding: 0;
     overflow: hidden;
     display: flex;
