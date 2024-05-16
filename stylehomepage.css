@@ -24,7 +24,7 @@ body, html {
     margin: 50px 0;
     font-size: 75px; 
     white-space: nowrap; 
-    text-shadow: 6px 0 8px yellow;
+    text-shadow: 6px 0 8px black;
     
 }
 
@@ -65,7 +65,7 @@ body, html {
     font-size: 30px;
     color: white;
     margin-bottom: 35px;
-    text-shadow: 0 0 8px yellow;
+    text-shadow: 0 0 8px black;
     
      
     }
@@ -97,7 +97,7 @@ ol{
             padding: 10px;
             z-index: 1;
             color: white;
-            text-shadow: 0 0 8px yellow;       
+            text-shadow: 0 0 8px black;       
     
 }
 
@@ -111,6 +111,6 @@ ol{
             padding: 10px;
             z-index: 1;
             color: white;
-            text-shadow: 0 0 8px yellow;       
+            text-shadow: 0 0 8px black;       
     
 }
