@@ -68,6 +68,50 @@ header{
   opacity: 0.8;
 }
 
+
+/*CHAT GPT FIX*/
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('ComfyUI_temp_jxvmx_00002_.png');
+    background-position: center; 
+    background-size: cover;
+    filter: blur(5px); /* 應用模糊效果 */
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* 確保內部絕對定位元素相對於hero容器定位 */
+}
+
+.overlay-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overlay-content a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF; /* 白色文字 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.overlay-content a:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* 懸停時背景顏色變深 */
+}
+
+header {
+    display: none; /* 隱藏header，因為連結已移入hero */
+}
+
+/*
   .hero{
 
       width: 100%;
@@ -81,8 +125,30 @@ header{
       display: flex;
       justify-content: center;
       align-items: center;
-      
-  }
+        }
+
+.logo{
+
+  top: 941px;
+  right: 15px;
+  position: absolute;
+  text-decoration: none;
+  font-size: 25px;
+  border: #FFD0FF;
+  
+}
+
+.homepage{
+
+  top: 941px;
+  left: 10px;
+  position: absolute;
+  text-decoration: none;
+  font-size: 25px;
+}
+*/
+
+
 
 .test{
   text-decoration: none;
@@ -106,25 +172,7 @@ footer{
   font-size: 15px;
 }
 
-.logo{
 
-  top: 941px;
-  right: 15px;
-  position: absolute;
-  text-decoration: none;
-  font-size: 25px;
-  border: #FFD0FF;
-  
-}
-
-.homepage{
-
-  top: 941px;
-  left: 10px;
-  position: absolute;
-  text-decoration: none;
-  font-size: 25px;
-}
 
 .testimg{
   max-width: 100%; 
