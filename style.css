@@ -71,11 +71,11 @@ header{
   .hero{
 
       width: 100%;
-      min-height: 500hv;
+      min-height: 100vh;
       background-image: url(ComfyUI_temp_jxvmx_00002_.png);
       background-position: center; 
       background-size: cover;
-      padding: 470px 0%;
+      padding: 0;
       overflow: hidden;
 
       display: flex;
