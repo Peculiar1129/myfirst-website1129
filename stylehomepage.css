@@ -8,16 +8,23 @@ body, html {
 }
 
 .hero {
-    position: relevant;
+ position: relative; /* 注意修正錯誤 */
     text-align: center;
     color: white;
     height: 100vh; 
-    background: url(ComfyUI_temp_lhsvu_00009_.png) no-repeat center center;
-    background-size: cover; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
