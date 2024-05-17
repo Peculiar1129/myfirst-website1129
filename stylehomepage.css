@@ -20,12 +20,6 @@ body, html {
     align-items: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
-}
 
 .titletop {
     margin: 50px 0;
