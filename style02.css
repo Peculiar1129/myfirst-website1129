@@ -112,7 +112,7 @@ header{
 .hero {
     width: 100%;
     min-height: 100vh;
-    background-image: url('ComfyUI_temp_jxvmx_00009_.png');
+    background-image: url('CARTOONHOME.png');
     background-position: center; 
     background-size: cover;
     filter: blur(0px); /* 應用模糊效果 */
