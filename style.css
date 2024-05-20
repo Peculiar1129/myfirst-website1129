@@ -286,6 +286,7 @@ footer{
 }
 
 img {
-    max-width: 100%;
+  min-width: 25%;  
+  max-width: 50%;
     height: auto;
 }
