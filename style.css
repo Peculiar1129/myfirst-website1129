@@ -75,16 +75,11 @@ header{
 .hero {
     width: 100%;
     min-height: 100vh;
-    background-image: url('REALITYHOME.png');
-    background-position: center; 
-    background-size: cover;
-    filter: blur(0px); /* 應用模糊效果 */
-    padding: 0;
+    position: relative; /* 確保內部絕對定位元素相對於hero容器定位 */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* 確保內部絕對定位元素相對於hero容器定位 */
 }
 
 .overlay-content {
