@@ -268,3 +268,8 @@ footer{
         min-height: 60vh; /* 進一步調整hero部分高度 */
     }
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
