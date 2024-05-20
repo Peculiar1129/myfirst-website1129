@@ -13,12 +13,7 @@
   z-index: -1;
 }
     
-    img {
-      width: 250px;
-      border-radius: 30px;
-      margin-right: 10px;
-      margin: 15px;
-    }
+   
 
     .highlight{
           text-shadow: 0 0 8px yellow;
@@ -282,7 +277,11 @@ footer{
 .imgfix {
   min-width: 20%;  
   max-width: 50%;
-    height: auto;
+  height: auto;
+  width: 250px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin: 15px;
 }
 
 .blur-load {
