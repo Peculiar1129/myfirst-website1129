@@ -300,12 +300,22 @@ img {
     opacity: 1;
 }
 
+/*
 .background-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 保證圖片覆蓋容器 */
+    object-fit: cover; 
     z-index: 1;
+}*/
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 確保圖片覆蓋整個容器並保持比例 */
+    position: absolute; /* 讓圖片在hero容器內絕對定位 */
+    top: 0;
+    left: 0;
 }
