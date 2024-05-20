@@ -290,3 +290,17 @@ img {
   max-width: 50%;
     height: auto;
 }
+
+.blur-load {
+    width: 100%;
+    max-width: 600px; /* 可根據需求調整圖片大小 */
+    filter: blur(20px);
+    transition: filter 1s ease;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.blur-load.loaded {
+    filter: blur(0px);
+    opacity: 1;
+}
