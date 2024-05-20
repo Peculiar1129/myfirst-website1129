@@ -103,11 +103,26 @@ header{
     background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
     padding: 10px 15px;
     border-radius: 5px;
+    transition: all 0.3s ease; /* 增加過渡效果 */
 }
 
 .overlay-content a:hover {
     background-color: rgba(0, 0, 0, 0.8); /* 懸停時背景顏色變深 */
+    animation: flash 0.3s; /* 懸停時觸發閃爍動畫 */
 }
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 header {
