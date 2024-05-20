@@ -40,8 +40,6 @@ body, html {
     font-size: 50px; 
 }
 
-/*#007BFF*/
-
 .linkbutton:hover {
     background-color: #0056b3;
 }
@@ -82,12 +80,6 @@ ol{
     
 }
 
-/*
-.box01 {
-
-    box-shadow: -3px 3px 25px white;
-}
-*/
 
 .topleft{
 
