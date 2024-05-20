@@ -316,5 +316,4 @@ img {
     object-fit: cover; /* 確保圖片覆蓋整個容器並保持比例 */
     position: absolute; /* 讓圖片在hero容器內絕對定位 */
     top: 0;
-    left: 0;
-}
+    }
