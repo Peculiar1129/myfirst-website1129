@@ -279,7 +279,7 @@ footer{
     }
 }
 
-img {
+.imgfix {
   min-width: 20%;  
   max-width: 50%;
     height: auto;
@@ -310,7 +310,7 @@ img {
     z-index: 1;
 }*/
 
-body .hero img {
+.hero img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* 確保圖片覆蓋整個容器並保持比例 */
