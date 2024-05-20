@@ -28,3 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const img = document.querySelector('.blur-load');
+    img.addEventListener('load', () => {
+        img.classList.add('loaded');
+    });
+});
+
