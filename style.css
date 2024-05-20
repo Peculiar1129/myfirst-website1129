@@ -235,3 +235,36 @@ footer{
 .back-to-top:hover {
     background-color: #555;
 }
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .logo,
+    .homepage {
+        font-size: 18px; /* 調整字體大小 */
+    }
+    
+    .back-to-top {
+        padding: 8px;
+        font-size: 12px; /* 調整按鈕字體大小 */
+    }
+    
+    .hero {
+        min-height: 70vh; /* 調整hero部分高度 */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo,
+    .homepage {
+        font-size: 16px; /* 進一步調整字體大小 */
+    }
+    
+    .back-to-top {
+        padding: 6px;
+        font-size: 10px; /* 進一步調整按鈕字體大小 */
+    }
+    
+    .hero {
+        min-height: 60vh; /* 進一步調整hero部分高度 */
+    }
+}
