@@ -228,6 +228,8 @@ footer{
     border-radius: 5px;
     text-decoration: none;
     font-size: 14px;
+    z-index: 1000; /* 設置較高的 z-index */
+
 }
 
 .back-to-top:hover {
