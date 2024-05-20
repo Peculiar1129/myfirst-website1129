@@ -7,6 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             backToTopButton.style.display = 'none';
         }
+
+        var footer = document.querySelector('footer');
+        var footerRect = footer.getBoundingClientRect();
+        var buttonRect = backToTopButton.getBoundingClientRect();
+        var windowHeight = window.innerHeight;
+
+        if (footerRect.top < windowHeight) { // 當 footer 可見時調整按鈕位置
+            backToTopButton.style.bottom = (windowHeight - footerRect.top + 20) + 'px';
+        } else {
+            backToTopButton.style.bottom = '20px';
+        }
     });
 
     backToTopButton.addEventListener('click', function(e) {
