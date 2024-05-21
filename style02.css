@@ -125,12 +125,14 @@ header{
 }
 
 .overlay-content {
-    position: absolute;
+     position: absolute;
     bottom: 20px;
-    left: 20px;
+    /*left: 20px;*/
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%; /* 確保覆蓋整個寬度 */
+    align-items: center; /* 讓內容在水平中心對齊 */
 }
 
 .overlay-content a {
