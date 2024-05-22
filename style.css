@@ -26,7 +26,7 @@ img {
 
 .hero-img {
   width: 100% !important; /* 覆蓋通用 img 樣式 */
-  height: auto !important; /* 覆蓋通用 img 樣式 */
+  height: 100vh !important; /* 覆蓋通用 img 樣式 */
   max-width: none !important; /* 覆蓋通用 img 樣式 */
   min-width: 0 !important; /* 覆蓋通用 img 樣式 */
   border-radius: 0 !important; /* 移除圓角效果 */
