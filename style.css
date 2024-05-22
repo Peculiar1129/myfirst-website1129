@@ -1,5 +1,11 @@
 /*REALISTIC*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
   body {
   /* 使用漸層背景 */
   background: linear-gradient(to right, #FFD0FF	, #BBFFFF);
@@ -43,7 +49,9 @@ img {
   margin: 0 !important; /* 移除 margin */
   object-fit: cover; /* 讓圖片覆蓋容器，可能被裁切 */
   object-position: center; /* 圖片居中 */
+  position: absolute;
 }
+
 
 /*CHAT GPT FIX*/
 
