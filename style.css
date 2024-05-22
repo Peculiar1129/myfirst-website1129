@@ -12,7 +12,26 @@
   /* 讓文字顯示在最上層 */
   z-index: -1;
 }
-    
+
+
+img {
+  min-width: 15%;  
+  max-width: 50%;
+  height: auto;
+  width: 250px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin: 15px;
+}
+
+.hero-img {
+  width: 100% !important; /* 覆蓋通用 img 樣式 */
+  height: auto !important; /* 覆蓋通用 img 樣式 */
+  max-width: none !important; /* 覆蓋通用 img 樣式 */
+  min-width: 0 !important; /* 覆蓋通用 img 樣式 */
+  border-radius: 0 !important; /* 移除圓角效果 */
+  margin: 0 !important; /* 移除 margin */
+}
    
 
     .highlight{
@@ -274,15 +293,8 @@ footer{
     }
 }
 
-img {
-  min-width: 15%;  
-  max-width: 50%;
-  height: auto;
-  width: 250px;
-  border-radius: 30px;
-  margin-right: 10px;
-  margin: 15px;
-}
+
+
 
 .blur-load {
     width: 100%;
@@ -309,11 +321,3 @@ img {
     z-index: 1;
 }*/
 
-.hero-img {
-  width: 100% !important; /* 覆蓋通用 img 樣式 */
-  height: auto !important; /* 覆蓋通用 img 樣式 */
-  max-width: none !important; /* 覆蓋通用 img 樣式 */
-  min-width: 0 !important; /* 覆蓋通用 img 樣式 */
-  border-radius: 0 !important; /* 移除圓角效果 */
-  margin: 0 !important; /* 移除 margin */
-}
