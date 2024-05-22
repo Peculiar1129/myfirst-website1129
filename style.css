@@ -37,12 +37,6 @@ img {
 }
 
 /*CHAT GPT FIX*/
-.hero .hero-img {
-    width: 100%;
-    height: 100vh;
-    position: relative; /* 確保內部絕對定位元素相對於hero容器定位 */
-    overflow: hidden;
-    }
 
 .overlay-content {
     position: absolute;
