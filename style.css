@@ -91,7 +91,7 @@ header{
 /*CHAT GPT FIX*/
 .hero {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     position: relative; /* 確保內部絕對定位元素相對於hero容器定位 */
     overflow: hidden;
     }
