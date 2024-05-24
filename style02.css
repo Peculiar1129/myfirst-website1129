@@ -12,6 +12,11 @@ body {
   /* 讓文字顯示在最上層 */
   z-index: -1;
 }
+
+*{
+
+  box-sizing: border-box;
+}
     
     img {
       width: 250px;
