@@ -264,13 +264,13 @@ footer{
     }
 }
 
-imgorder {
+.imgorder {
     display: flex;
     flex-wrap: wrap;
     
   }
 
-  imgorder img {
+  .imgorder img {
     flex: 1 1 calc(40% - 30px); /* 使圖片佔據50%的寬度並考慮邊距 */
     max-width: 45%; /* 最大寬度限制 */
   }
