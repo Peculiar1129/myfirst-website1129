@@ -264,6 +264,17 @@ footer{
     }
 }
 
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section img {
+    flex: 1 1 calc(50% - 30px); /* 使圖片佔據50%的寬度並考慮邊距 */
+    max-width: 45%; /* 最大寬度限制 */
+  }
+
 img {
     max-width: 100%;
     height: auto;
