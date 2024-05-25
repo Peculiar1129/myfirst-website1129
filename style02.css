@@ -236,7 +236,7 @@ footer{
     background-color: #555;
 }
 
-/* 響應式設計 */
+/* 平板設備 */
 @media (max-width: 768px) {
     .logo,
     .homepage {
@@ -253,10 +253,11 @@ footer{
     }
 }
 
+/* 手機設備 */
 @media (max-width: 480px) {
     .logo,
     .homepage {
-        font-size: 16px; /* 進一步調整字體大小 */
+        font-size: 12px; /* 進一步調整字體大小 */
     }
     
     .back-to-top {
@@ -267,6 +268,16 @@ footer{
     .hero {
         min-height: 60vh; /* 進一步調整hero部分高度 */
     }
+  .highlight {
+    font-size: 12px;
+  }
+  .positive{
+        font-size: 12px;
+  }
+
+  .negative {
+      font-size: 12px;
+  }
 }
 
 .imgorder {
