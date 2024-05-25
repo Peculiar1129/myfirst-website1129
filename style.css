@@ -293,10 +293,11 @@ footer{
     }
 }
 
+/* 手機設備 */
 @media (max-width: 480px) {
     .logo,
     .homepage {
-        font-size: 16px; /* 進一步調整字體大小 */
+        font-size: 12px; /* 進一步調整字體大小 */
     }
     
     .back-to-top {
@@ -307,7 +308,20 @@ footer{
     .hero {
         min-height: 60vh; /* 進一步調整hero部分高度 */
     }
-}
+  .highlight {
+    font-size: 20px;
+  }
+  .positive{
+        font-size: 16px;
+  }
+
+  .negative {
+      font-size: 16px;
+  }
+
+  .content {
+    font-size: 14px;
+  }
 
 
 
