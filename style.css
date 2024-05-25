@@ -323,6 +323,13 @@ footer{
     font-size: 14px;
   }
 
+      img {
+      width: 150px;
+      border-radius: 15px;
+      margin: 8px;
+    }
+}
+
 
 
 
