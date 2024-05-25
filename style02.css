@@ -269,24 +269,24 @@ footer{
         min-height: 60vh; /* 進一步調整hero部分高度 */
     }
   .highlight {
-    font-size: 14px;
+    font-size: 18px;
   }
   .positive{
-        font-size: 14px;
+        font-size: 16px;
   }
 
   .negative {
-      font-size: 14px;
+      font-size: 16px;
   }
 
   .content {
-    font-size: 13px;
+    font-size: 14px;
   }
 
       img {
       width: 150px;
-      border-radius: 30px;
-      margin: 15px;
+      border-radius: 15px;
+      margin: 12px;
     }
 }
 
