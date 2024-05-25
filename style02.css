@@ -278,6 +278,10 @@ footer{
   .negative {
       font-size: 12px;
   }
+
+  .content {
+    font-size: 9px;
+  }
 }
 
 .imgorder {
