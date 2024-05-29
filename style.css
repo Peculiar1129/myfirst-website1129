@@ -228,7 +228,7 @@ footer{
     padding: 10px;
     border-radius: 9px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 15px;
     z-index: 1000; /* 設置較高的 z-index */
 
 }
@@ -246,7 +246,7 @@ footer{
     
     .back-to-top {
         padding: 8px;
-        font-size: 20px; /* 調整按鈕字體大小 */
+        font-size: 10px; /* 調整按鈕字體大小 */
     }
     
     .hero {
@@ -263,7 +263,7 @@ footer{
     
     .back-to-top {
         padding: 6px;
-        font-size: 15px; /* 進一步調整按鈕字體大小 */
+        font-size: 10px; /* 進一步調整按鈕字體大小 */
     }
     
     .hero {
