@@ -114,16 +114,43 @@ ol{
     
 }
 
-a
+
+/* 平板設備 */
+@media (max-width: 768px) {
+      .list01{
+        
+    font-size: 125px;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0 0 7px black;
+         
+    }
+
+    .linkbutton {
+    top: 150px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #FF79BC	;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    font-size: 65px; 
+}
+
+.linkbutton:hover {
+    background-color: #0056b3;
+}
+}
+
 
 /* 手機設備 */
 @media (max-width: 480px) {
 
       .list01{
         
-    font-size: 100px;
+    font-size: 125px;
     color: white;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     text-shadow: 0 0 7px black;
          
     }
