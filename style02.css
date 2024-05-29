@@ -86,45 +86,6 @@ header{
   opacity: 0.8;
 }
 
-/*
-  .hero{
-
-      width: 100%;
-      min-height: 100vh;
-      background-image: url(ComfyUI_temp_jxvmx_00005_.png);
-      filter: blur(0px);
-      background-position: center; 
-      background-size: cover;
-      padding: 0;
-      overflow: hidden;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-  }
-
-.logo{
-
-  top: 941px;
-  right: 15px;
-  position: absolute;
-  text-decoration: none;
-  font-size: 25px;
-  border: #FFD0FF;
-  
-}
-
-.homepage{
-
-  top: 941px;
-  left: 10px;
-  position: absolute;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-*/
 
 .hero {
     width: 100%;
@@ -309,11 +270,6 @@ footer{
     flex: 1 1 calc(35% - 30px); /* 使圖片佔據50%的寬度並考慮邊距 */
     max-width: 45%; /* 最大寬度限制 */
   }
- /*
-img {
-    max-width: 100%;
-    height: auto;
-}*/
 
 
 
