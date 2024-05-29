@@ -117,7 +117,7 @@ img {
 
           text-shadow: 0 0 8px green;
           font-weight: bold;
-          font-size: 45px;
+          font-size: 55px;
           margin: 10px;
           font-family: 'Comic Sans MS', sans-serif;
 
@@ -127,7 +127,7 @@ img {
 
           text-shadow: 0 0 8px red;
           font-weight: bold;
-          font-size: 45px;
+          font-size: 55px;
           margin: 10px;
           font-family: 'Comic Sans MS', sans-serif;
 
@@ -141,9 +141,9 @@ img {
 .content{
       font-size: 25px;
       font-family: 'Comic Sans MS', sans-serif;
-      border: 5px solid #FCFCFC;
+      border: 7px solid #FCFCFC;
       padding: 20px;
-      margin: 20px;
+      margin: 15px;
 }
 
 header{
@@ -173,45 +173,6 @@ header{
 header {
     display: none; /* 隱藏header，因為連結已移入hero */
 }
-
-/*
-  .hero{
-
-      width: 100%;
-      min-height: 100vh;
-      background-image: url(ComfyUI_temp_jxvmx_00002_.png);
-      background-position: center; 
-      background-size: cover;
-      padding: 0;
-      overflow: hidden;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-        }
-
-.logo{
-
-  top: 941px;
-  right: 15px;
-  position: absolute;
-  text-decoration: none;
-  font-size: 25px;
-  border: #FFD0FF;
-  
-}
-
-.homepage{
-
-  top: 941px;
-  left: 10px;
-  position: absolute;
-  text-decoration: none;
-  font-size: 25px;
-}
-*/
-
-
 
 .test{
   text-decoration: none;
@@ -255,27 +216,6 @@ footer{
   transform: translateY(0px);
   }
 }
-
-/*
-  .back-to-home {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .back-to-home:hover {
-            background-color: #0056b3;
-        }
-*/
-
 
 .back-to-top {
     position: fixed;
@@ -351,9 +291,6 @@ footer{
     }
 }
 
-
-
-
 .blur-load {
     width: 100%;
     max-width: 600px; /* 可根據需求調整圖片大小 */
@@ -367,15 +304,3 @@ footer{
     filter: blur(0px);
     opacity: 1;
 }
-
-/*
-.background-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: 1;
-}*/
-
