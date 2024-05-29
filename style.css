@@ -228,6 +228,7 @@ footer{
     padding: 10px;
     border-radius: 9px;
     text-decoration: none;
+    font-family: 'Comic Sans MS', sans-serif;
     font-size: 15px;
     z-index: 1000; /* 設置較高的 z-index */
 
@@ -246,6 +247,7 @@ footer{
     
     .back-to-top {
         padding: 8px;
+        font-family: 'Comic Sans MS', sans-serif;
         font-size: 10px; /* 調整按鈕字體大小 */
     }
     
@@ -263,7 +265,10 @@ footer{
     
     .back-to-top {
         padding: 6px;
+        font-family: 'Comic Sans MS', sans-serif;
         font-size: 20px; /* 進一步調整按鈕字體大小 */
+        border-radius: 7px;
+
     }
     
     .hero {
