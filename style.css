@@ -246,7 +246,7 @@ footer{
     
     .back-to-top {
         padding: 8px;
-        font-size: 45px; /* 調整按鈕字體大小 */
+        font-size: 20px; /* 調整按鈕字體大小 */
     }
     
     .hero {
@@ -263,7 +263,7 @@ footer{
     
     .back-to-top {
         padding: 6px;
-        font-size: 45px; /* 進一步調整按鈕字體大小 */
+        font-size: 15px; /* 進一步調整按鈕字體大小 */
     }
     
     .hero {
