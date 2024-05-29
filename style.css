@@ -73,6 +73,8 @@ img {
   position: absolute;
 }
 
+ .image:hover img {
+        filter: brightness(130%);
 
 /*CHAT GPT FIX*/
 
