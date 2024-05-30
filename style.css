@@ -78,6 +78,11 @@ img:hover {
   position: absolute;
 }
 
+/* 覆蓋 .hero-img 的懸停效果 */
+.hero .hero-img:hover {
+    transform: none; /* 移除縮放效果 */
+}
+
 /* .image:hover img {
         filter: brightness(130%); */
 
