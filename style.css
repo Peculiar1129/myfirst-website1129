@@ -311,3 +311,11 @@ footer{
     filter: blur(0px);
     opacity: 1;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
