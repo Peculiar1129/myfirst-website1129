@@ -62,7 +62,8 @@ img {
 }
 
 img:hover {
-    transform: scale(1.1); /* 在滑鼠懸停時放大110% */
+    transform: scale(1.08); /* 在滑鼠懸停時放大110% */
+    border: 3px solid #ffffff; /* 添加白色邊框 */
 }
 
 /* 確保 .hero-img 樣式定義在通用 img 樣式之後 */
@@ -81,6 +82,7 @@ img:hover {
 /* 覆蓋 .hero-img 的懸停效果 */
 .hero .hero-img:hover {
     transform: none; /* 移除縮放效果 */
+    border: none; /* 添加白色邊框 */
 }
 
 /* .image:hover img {
