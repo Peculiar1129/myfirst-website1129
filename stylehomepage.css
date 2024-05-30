@@ -28,10 +28,10 @@ li a:hover{
 }
 
 .titletop {
-    margin: 50px 0;
+    margin: 35px 0;
     font-size: 100px; 
     white-space: nowrap; 
-    text-shadow: 6px 0 13px black;
+    text-shadow: 8px 0 13px black;
     
 }
 
