@@ -63,8 +63,8 @@ img {
 
 img:hover {
     transform: scale(1.08); /* 在滑鼠懸停時放大110% */
-    border: 8px solid rgba(255, 255, 255, 0.8); /* 添加至少8px的白色半透明邊框 */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* 添加模糊效果 */
+    border: 7px solid rgba(255, 192, 203, 0.8); /* 添加至少8px的白色半透明邊框 */
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.8); /* 添加模糊效果 */
 }
 
 /* 確保 .hero-img 樣式定義在通用 img 樣式之後 */
