@@ -58,6 +58,11 @@ img {
   border-radius: 30px;
   margin-right: 10px;
   margin: 15px;
+  transition: transform 0.3s ease; /* 添加平滑過渡效果 */
+}
+
+img:hover {
+    transform: scale(1.1); /* 在滑鼠懸停時放大110% */
 }
 
 /* 確保 .hero-img 樣式定義在通用 img 樣式之後 */
