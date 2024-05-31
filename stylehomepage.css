@@ -14,7 +14,8 @@ body, html {
     color: white;
     height: calc(100vh - 60px); /* Adjust height to account for the menu */
     background: url('HOMEPAGE.png') no-repeat center center;
-    background-size: cover;
+    background-size: cover; /* Try contain if cover causes issues */
+    background-position: center top; /* Adjust position if needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
