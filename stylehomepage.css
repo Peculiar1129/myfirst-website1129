@@ -243,7 +243,7 @@ nav {
     }
 
     .horizontal-menu .dropdown a {
-        font-size: 40px; /* Increase the font size for the dropdown items */
+        font-size: 35px; /* Increase the font size for the dropdown items */
     }
 
     .horizontal-menu li:hover .dropdown {
