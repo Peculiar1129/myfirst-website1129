@@ -198,12 +198,12 @@ nav {
     }
 
     .horizontal-menu .dropdown li {
-        font-size: 24px; /* Increase font size for dropdown items */
+        font-size: 30px; /* Increase font size for dropdown items */
         padding: 10px 0; /* Adjust padding for better spacing */
     }
 
     .horizontal-menu .dropdown a {
-        font-size: 24px; /* Increase font size for dropdown links */
+        font-size: 30px; /* Increase font size for dropdown links */
     }
 
     .horizontal-menu li:hover .dropdown {
@@ -257,12 +257,12 @@ nav {
     }
 
     .horizontal-menu .dropdown li {
-        font-size: 24px; /* Increase font size for dropdown items */
+        font-size: 30px; /* Increase font size for dropdown items */
         padding: 10px 0; /* Adjust padding for better spacing */
     }
 
     .horizontal-menu .dropdown a {
-        font-size: 24px; /* Increase font size for dropdown links */
+        font-size: 30px; /* Increase font size for dropdown links */
     }
 
     .horizontal-menu li:hover .dropdown {
