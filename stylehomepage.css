@@ -192,6 +192,11 @@ nav {
         opacity: 1; /* Make sure dropdowns are visible */
     }
 
+    .horizontal-menu .dropdown li {
+        font-size: 20px; /* Increase font size for dropdown items */
+        padding: 10px 0; /* Adjust padding for better spacing */
+    }
+
     .horizontal-menu li:hover .dropdown {
         display: block;
         opacity: 1;
@@ -232,7 +237,7 @@ nav {
     }
 
     .horizontal-menu a {
-        font-size: 18px; /* Decrease font size */
+        font-size: 24px; /* Increase font size */
         padding: 10px; /* Adjust padding */
     }
 
@@ -240,6 +245,11 @@ nav {
         position: static; /* Remove absolute positioning */
         background-color: rgba(0, 0, 0, 0.8); /* Ensure background color */
         opacity: 1; /* Make sure dropdowns are visible */
+    }
+
+    .horizontal-menu .dropdown li {
+        font-size: 24px; /* Increase font size for dropdown items */
+        padding: 10px 0; /* Adjust padding for better spacing */
     }
 
     .horizontal-menu li:hover .dropdown {
