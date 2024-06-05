@@ -175,6 +175,27 @@ nav {
     .linkbutton:hover {
         background-color: #0056b3;
     }
+
+    .horizontal-menu {
+        flex-direction: column; /* Stack the menu items vertically */
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.8); /* Ensure background color covers full height */
+    }
+
+    .horizontal-menu li {
+        margin: 5px 0; /* Add some spacing between items */
+    }
+
+    .horizontal-menu .dropdown {
+        position: static; /* Remove absolute positioning */
+        background-color: rgba(0, 0, 0, 0.8); /* Ensure background color */
+        opacity: 1; /* Make sure dropdowns are visible */
+    }
+
+    .horizontal-menu li:hover .dropdown {
+        display: block;
+        opacity: 1;
+    }
 }
 
 /* 手機設備 */
@@ -201,49 +222,24 @@ nav {
     }
 
     .horizontal-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: flex-start; /* Align items to the left */
-        background-color: rgba(0, 0, 0, 0.8);
-        height: 100%; /* Set the height to 100% */
-        align-items: center; /* Center items vertically */
-        font-family: 'Comic Sans MS', sans-serif; /* Set the font */
+        flex-direction: column; /* Stack the menu items vertically */
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.8); /* Ensure background color covers full height */
     }
 
     .horizontal-menu li {
-        position: relative;
-        margin: 0 15px;
+        margin: 5px 0; /* Add some spacing between items */
     }
 
     .horizontal-menu a {
-        text-decoration: none;
-        color: white; /* Set text color to white */
-        font-size: 45px;
-        padding: 15px;
-        display: block;
+        font-size: 18px; /* Decrease font size */
+        padding: 10px; /* Adjust padding */
     }
 
     .horizontal-menu .dropdown {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-    }
-
-    .horizontal-menu .dropdown li {
-        width: 200px;
-    }
-
-    .horizontal-menu .dropdown a {
-        font-size: 35px; /* Increase the font size for the dropdown items */
+        position: static; /* Remove absolute positioning */
+        background-color: rgba(0, 0, 0, 0.8); /* Ensure background color */
+        opacity: 1; /* Make sure dropdowns are visible */
     }
 
     .horizontal-menu li:hover .dropdown {
