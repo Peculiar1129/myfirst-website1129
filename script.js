@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const text = "Your text here. This will appear with a typing effect.";
+    const text = "世界が終わるまで";
     const typingTextElement = document.getElementById('typing-text');
 
     let index = 0;
