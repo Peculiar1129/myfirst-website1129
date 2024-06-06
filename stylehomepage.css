@@ -22,6 +22,16 @@ body, html {
     align-items: center;
 }
 
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px; /* Adjust padding as needed */
+    font-size: 80px; /* Increase font size */
+    color: white; /* Set text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
 li a:hover {
     text-decoration: underline;
 }
@@ -155,6 +165,11 @@ nav {
 
 /* 平板設備 */
 @media (max-width: 768px) {
+
+.hero-text {
+        font-size: 100px; /* Increase font size for tablets */
+    }
+    
     .list01 {
         font-size: 125px;
         color: rgb(255, 26, 26);
@@ -214,6 +229,11 @@ nav {
 
 /* 手機設備 */
 @media (max-width: 480px) {
+
+ .hero-text {
+        font-size: 125px; /* Increase font size for mobile devices */
+    }
+    
     .list01 {
         font-size: 125px;
         color: rgb(255, 26, 26);
