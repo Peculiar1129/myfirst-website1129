@@ -1,18 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const text = "世界が終わるまで";
-    const typingTextElement = document.getElementById('typing-text');
-
-    let index = 0;
-
-    function type() {
-        if (index < text.length) {
-            typingTextElement.textContent += text.charAt(index);
-            index++;
-            setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
-        }
-    }
-
-    type();
 
     var backToTopButton = document.querySelector('.back-to-top');
 
