@@ -10,7 +10,7 @@ function verifyAge(isOfAge) {
 window.onload = function() {
     document.getElementById('age-verification').style.display = 'flex';
 };
-
+/*age-verify-function*/
 
     var backToTopButton = document.querySelector('.back-to-top');
 
