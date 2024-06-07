@@ -40,3 +40,11 @@ backToTopButton.addEventListener('click', function(e) {
         behavior: 'smooth'
     });
 });
+
+const menuButton = document.getElementById('menuButton');
+const horizontalMenu = document.querySelector('.horizontal-menu');
+
+menuButton.addEventListener('click', () => {
+  horizontalMenu.classList.toggle('hidden');
+});
+
