@@ -35,6 +35,7 @@ body, html {
 
 .popup button {
     font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 55px;
     background-color: #f0f0f0;
     border: none;
     padding: 10px 20px;
