@@ -28,13 +28,13 @@ body, html {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    font-size: 80px;
+    font-size: 75px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", Arial, sans-serif;
 }
 
 .popup button {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", Arial, sans-serif;
     font-size: 55px;
     background-color: #f0f0f0;
     border: none;
