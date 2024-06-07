@@ -179,27 +179,6 @@ nav {
     text-decoration: none;
 }
 
-.topleft {
-    position: absolute;
-    font-size: 15px;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    z-index: 1;
-    color: white;
-    text-shadow: 0 0 8px black;
-}
-
-.bottomright {
-    position: absolute;
-    font-size: 15px;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    z-index: 1;
-    color: white;
-    text-shadow: 0 0 8px black;
-}
 
 .menu-button {
   /* Add styles for the menu button */
