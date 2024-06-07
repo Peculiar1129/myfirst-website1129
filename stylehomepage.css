@@ -201,6 +201,20 @@ nav {
     text-shadow: 0 0 8px black;
 }
 
+.menu-button {
+  /* Add styles for the menu button */
+  position: absolute; /* Position the button absolutely */
+  top: 20px; /* Set the top position */
+  left: 20px; /* Set the left position */
+  padding: 10px 20px; /* Add padding for spacing */
+  background-color: #FF79BC; /* Adjust background color */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 20px; /* Adjust font size */
+  color: white; /* Set text color */
+  cursor: pointer; /* Indicate clickable behavior */
+  z-index: 100; /* Ensure button is on top */
+}
+
 /* 平板設備 */
 @media (max-width: 768px) {
 
