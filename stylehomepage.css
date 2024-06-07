@@ -25,16 +25,16 @@ body, html {
 
 .popup {
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
-    font-size: 75px;
+    font-size: 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: "Comic Sans MS", Arial, sans-serif;
+    font-family: "Comic Sans MS", Lucida Handwriting, sans-serif;
 }
 
 .popup button {
-    font-family: "Comic Sans MS", Arial, sans-serif;
+    font-family: "Comic Sans MS", Lucida Handwriting, sans-serif;
     font-size: 55px;
     background-color: #f0f0f0;
     border: none;
