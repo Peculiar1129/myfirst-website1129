@@ -43,3 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+function verifyAge(isOfAge) {
+    if (isOfAge) {
+        document.getElementById('age-verification').style.display = 'none';
+    } else {
+        alert("You must be 18 years or older to enter this site.");
+        window.location.href = "https://www.google.com";
+    }
+}
+
+window.onload = function() {
+    document.getElementById('age-verification').style.display = 'flex';
+};
