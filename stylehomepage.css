@@ -141,7 +141,7 @@ nav {
     transition: opacity 0.5s ease-in-out;
 }
 .horizontal-menu .dropdown li {
-    width: 400px;
+    width: 350px;
 }
 .horizontal-menu li:hover .dropdown {
     display: block;
