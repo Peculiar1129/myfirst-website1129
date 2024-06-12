@@ -124,7 +124,7 @@ nav {
 .horizontal-menu a {
     text-decoration: none;
     color: white; /* Set text color to white */
-    font-size: 30px;
+    font-size: 20px;
     padding: 15px;
     display: block;
 }
@@ -265,7 +265,7 @@ nav {
         margin: 5px 0; /* Add some spacing between items */
     }
     .horizontal-menu a {
-        font-size: 35px; /* Increase font size */
+        font-size: 40px; /* Increase font size */
         padding: 10px; /* Adjust padding */
     }
     .horizontal-menu .dropdown {
@@ -278,7 +278,7 @@ nav {
         padding: 10px 0; /* Adjust padding for better spacing */
     }
     .horizontal-menu .dropdown a {
-        font-size: 30px; /* Increase font size for dropdown links */
+        font-size: 40px; /* Increase font size for dropdown links */
     }
     .horizontal-menu li:hover .dropdown {
         display: block;
