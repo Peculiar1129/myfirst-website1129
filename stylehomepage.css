@@ -136,8 +136,8 @@ nav {
     background-color: rgba(0, 0, 0, 0.8);
     list-style: none;
     padding: 0;
-    margin: 0;
-    opacity: 0;
+    margin: 14px;
+    opacity: 0.5;
     transition: opacity 0.5s ease-in-out;
 }
 .horizontal-menu .dropdown li {
