@@ -254,6 +254,18 @@ nav {
     .linkbutton:hover {
         background-color: #0056b3;
     }
+
+    nav {
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 80px; /* Set the height of the menu */
+}
+    
     .horizontal-menu {
         flex-direction: column; /* Stack the menu items vertically */
         height: auto;
