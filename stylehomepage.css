@@ -274,6 +274,7 @@ nav a:hover {
         position: static; /* Remove absolute positioning */
         background-color: rgba(0, 0, 0, 0.8); /* Ensure background color */
         opacity: 1; /* Make sure dropdowns are visible */
+        margin-top: 25px;
     }
     .horizontal-menu .dropdown li {
         font-size: 30px; /* Increase font size for dropdown items */
