@@ -85,13 +85,14 @@ li a:hover {
     margin-top: 35px; /* Adjust margin as needed */
 }
 .linkbutton:hover {
-    background-color: #0056b3;
+    background-color: #faa1ff;
 }
 .ani {
     opacity: 0;
     transform: translateY(35px);
     animation: moveup 0.4s linear forwards;
 }
+
 @keyframes moveup {
     100% {
         opacity: 1;
