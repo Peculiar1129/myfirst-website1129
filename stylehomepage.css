@@ -321,8 +321,9 @@ nav a:hover {
 
 .popup button {
     font-family: "Comic Sans MS", Lucida Handwriting, sans-serif;
-    font-size: 55px;
-    background-color: #ff8b8b;
+    font-size: 65px;
+    text-color: black;
+    background-color: #ff64ae;
     border: none;
     padding: 10px 20px;
     margin: 10px;
