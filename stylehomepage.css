@@ -87,13 +87,17 @@ body, html {
     border-radius: 8px;
     transition: background-color 0.3s;
     font-size: 50px;
+    text-shadow: 3px 3px 4px black;
     margin-top: 40px; /* Adjust margin as needed */
 }
 
 
+/*FOLLOW MY BLABLABLA EFFECT*/
 .linkbutton:hover {
     background-color: #faa1ff;
 }
+
+
 .ani {
     opacity: 0;
     transform: translateY(35px);
@@ -106,59 +110,77 @@ body, html {
         transform: translateY(0px);
     }
 }
+
+
+/*導覽條*/
 nav {
     width: 100%;
-    text-align: left; /* Align text to the left */
-    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 2;
-    height: 115px; /* Set the height of the menu */
+    height: 90px;*/ /* Set the height of the menu */
 }
 
+
+/*導覽條*/
 nav a:hover {
     
     color: #ff69b4; 
 }
 
+
+/*導覽條位置與顏色*/
 .horizontal-menu {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: flex-start; /* Align items to the left */
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%; /* Set the height to 100% */
     align-items: center; /* Center items vertically */
     font-family: 'Comic Sans MS', sans-serif; /* Set the font */
 }
+
+
 .horizontal-menu li {
     position: relative;
-    margin: 0 15px;
+    margin: 0 11px;
 }
+
+
+/*導覽條上面的文字*/
 .horizontal-menu a {
     text-decoration: none;
-    color: white; /* Set text color to white */
+    color: white; 
     font-size: 40px;
     padding: 10px;
     display: block;
 }
+
+/*導覽條的下拉選單*/
 .horizontal-menu .dropdown {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
+    background-color: rgba(100, 100, 100, 0.8);
+    border-radius: 5px;
     list-style: none;
     padding: 0;
-    margin: 2px;
+    margin: 0px;
     transition: opacity 0.5s ease-in-out;
 }
+
+
+/*導覽條的下拉選單的文字*/
 .horizontal-menu .dropdown li {
     width: 350px;
+    padding: 20px;
+    font-size: 100px;
 }
+
+/*UPDATED DONE ABOVE*/
+
 .horizontal-menu li:hover .dropdown {
     display: block;
     opacity: 1;
