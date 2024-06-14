@@ -309,15 +309,27 @@ nav a:hover {
     animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
 }
 
-    
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    .popup {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Comic Sans MS", Lucida Handwriting, sans-serif;
 }
-/* The cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+
+.popup button {
+    font-family: "Comic Sans MS", Lucida Handwriting, sans-serif;
+    font-size: 55px;
+    background-color: #ff8b8b;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
 }
+.popup button:hover {
+    background-color: #ff0e0e;
+}
+
 }
