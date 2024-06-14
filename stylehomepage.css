@@ -179,22 +179,26 @@ nav a:hover {
     font-size: 100px;
 }
 
-/*UPDATED DONE ABOVE*/
-
+/*使他有下拉功能，勿刪*/
 .horizontal-menu li:hover .dropdown {
     display: block;
     opacity: 1;
 }
+
+
+/*文字*/
 .list01 {
-    font-size: 40px;
-    color: rgb(255, 26, 26); /* Set text color to rgb(255, 26, 26) */
-    margin-bottom: 28px;
-    text-shadow: 0 0 7px black;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px black;
 }
+
+
 .remove {
     color: inherit;
     text-decoration: none;
 }
+
+
 
 /* 平板設備 */
 @media (max-width: 768px) {
