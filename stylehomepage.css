@@ -5,7 +5,7 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: auto; /* Prevent scrolling */
+    overflow: hidden; /* Prevent scrolling */
 }
 
 /*年齡認證區塊*/
@@ -62,7 +62,6 @@ body, html {
     color: white;
     height: 100vh;  /* Ensure hero takes full viewport height */
     background: url('HOMEPAGE.png') no-repeat center center;
-    overflow: hidden;
     background-size: cover; /* Ensure the background covers the entire hero */
 }
 
