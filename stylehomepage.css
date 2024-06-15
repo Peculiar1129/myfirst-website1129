@@ -61,7 +61,8 @@ body, html {
     text-align: center;
     color: white;
     height: 100vh;  /* Ensure hero takes full viewport height */
-    background: url('NEWHOMEPAGE.png') no-repeat center center;
+    background: url('HOMEPAGE.png') no-repeat center center;
+    overflow: hidden;
     background-size: cover; /* Ensure the background covers the entire hero */
 }
 
