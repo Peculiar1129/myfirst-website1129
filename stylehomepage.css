@@ -135,7 +135,7 @@ nav a:hover {
     margin: 0;
     display: flex;
     justify-content: flex-start; /* Align items to the left */
-    background-color: rgba(45, 45, 45, 0.5);
+    background-color: rgba(255, 199, 245, 0.5);
     height: 100%; /* Set the height to 100% */
     align-items: center; /* Center items vertically */
     font-family: 'Comic Sans MS', Trebuchet MS; /* Set the font */
