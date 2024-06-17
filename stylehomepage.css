@@ -189,8 +189,6 @@ nav a:hover {
     font-size: 48px; /* Adjust font size as needed */
 }
 
-
-
 /* Dropdown menu styles */
 .horizontal-menu .dropdown {
     display: block; /* 從display:none改為block，隱藏將使用transform */
