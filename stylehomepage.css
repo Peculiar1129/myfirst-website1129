@@ -207,7 +207,7 @@ nav a:hover {
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
-    position: absolute;
+    position: reletive; /*我把absolute改成reletive測試看看20240617*/
     top: 100%;
     left: -10px;
     background-color: rgba(255, 193, 231, 0.7);
