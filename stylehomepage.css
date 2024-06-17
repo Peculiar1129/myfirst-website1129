@@ -61,7 +61,7 @@ body, html {
     text-align: center;
     color: white;
     height: 100vh;  /* Ensure hero takes full viewport height */
-    background: url('HOMEPAGE.png') no-repeat center center;
+    background: url('https://i.pinimg.com/originals/6a/fd/6e/6afd6e99e3f8347a9d4e469e5d414b4f.jpg') no-repeat center center;
     background-size: cover; /* Ensure the background covers the entire hero */
 }
 
@@ -157,9 +157,12 @@ nav a:hover {
     display: block;
 }
 
-/*導覽條的下拉選單*/
+/* 導覽條的下拉選單 */
 .horizontal-menu .dropdown {
-    display: none;
+    display: block; /* 從display:none改為block，隱藏將使用transform */
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
     position: absolute;
     top: 100%;
     left: 0;
@@ -168,33 +171,32 @@ nav a:hover {
     list-style: none;
     padding: 0;
     margin: 0px;
-    transition: opacity 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-
-/*導覽條的下拉選單的文字*/
+/* 導覽條的下拉選單的文字 */
 .horizontal-menu .dropdown li {
     width: 350px;
     padding: 20px;
     font-size: 100px;
 }
 
-/*使他有下拉功能，勿刪*/
+/* 使他有下拉功能，勿刪 */
 .horizontal-menu li:hover .dropdown {
-    display: block;
+    transform: scaleY(1);
     opacity: 1;
 }
 
-
-/*文字*/
+/* 文字 */
 .list01 {
     margin-bottom: 10px;
     text-shadow: 0 0 5px black;
 }
 
 
+
 .remove {
-    color: inherit;
+    color: inherit; 
     text-decoration: none;
 }
 
@@ -351,7 +353,7 @@ nav a:hover {
 /*年齡認證區塊*/
 .overlay {
     position: fixed;
-    top: 0;
+    top: 0; q
     left: 0;
     width: 100%;
     height: 100%;
