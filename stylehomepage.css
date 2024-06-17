@@ -173,9 +173,7 @@ nav a:hover {
 
 /*白色按鈕*/
 .horizontal-menu .list01 {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     margin-right: 10px; /* Spacing between items */
     white-space: normal;
     padding: 1px;
@@ -191,6 +189,8 @@ nav a:hover {
     text-decoration: none;
     font-size: 48px; /* Adjust font size as needed */
 }
+
+
 
 /* Dropdown menu styles */
 .horizontal-menu .dropdown {
