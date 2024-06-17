@@ -82,7 +82,7 @@ body, html {
     text-decoration: none;
     font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
     color: white;/*字體顏色*/
-    background-color: hsl(303, 100%, 78%); /*橫條的背景顏色*/
+    background-color: hsl(303, 100%, 84%); /*橫條的背景顏色*/
     box-shadow: 4px 3px 5px rgba(0, 0, 0, 1) inset;
     border-radius: 8px;
     transition: background-color 0.3s;
@@ -184,6 +184,7 @@ nav a:hover {
     padding: 1px;
     height: 90px;
     background-color: hsl(332, 100%, 91%);/*方塊顏色*/
+    box-shadow: 5px 2px 8px black inset;
     border-radius: 10px;
 }
 
@@ -209,12 +210,12 @@ nav a:hover {
     position: absolute;
     top: 100%;
     left: -10px;
-    background-color: rgba(255, 193, 231, 0.8);
-    border-radius: 5px;
+    background-color: rgba(255, 193, 231, 0.7);
+    border-radius: 15px;
     list-style: none;
     padding: 0;
     width: 400%;
-    margin: 1px;
+    margin: 2px;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
