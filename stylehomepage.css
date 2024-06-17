@@ -1,7 +1,7 @@
 /* HOMEPAGE */
 body, html {
     height: 100%;
-    font-family: Arial, Trebuchet MS;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -199,7 +199,7 @@ nav a:hover {
 
 
 
-/* Dropdown menu styles */
+/* 下拉選單 */
 .horizontal-menu .dropdown {
     display: block; 
     /* 從display:none改為block，隱藏將使用transform */
@@ -208,12 +208,13 @@ nav a:hover {
     transform-origin: top;
     position: absolute;
     top: 100%;
-    left: 0;
-    background-color: rgba(255, 193, 231, 0.7);
+    left: -10px;
+    background-color: rgba(255, 193, 231, 0.8);
     border-radius: 5px;
     list-style: none;
     padding: 0;
-    margin: 0px;
+    width: 400%;
+    margin: 1px;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
@@ -378,7 +379,7 @@ nav a:hover {
     z-index: 1;
     color: white;
     text-shadow: 0 0 8px black;
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: 'Comic Sans MS', Trebuchet MS;
     background-color: rgba(0, 0, 0, 0.5); 
 }
     
@@ -414,12 +415,12 @@ nav a:hover {
     text-align: center;
     font-size: 60px;
     box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.8);
-    font-family: "Comic Sans MS", Lucida Handwriting, sans-serif;
+    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
 }
 
 
 .popup button {
-    font-family: "Comic Sans MS", Lucida Handwriting, sans-serif;
+    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
     font-size: 55px;
     background-color: rgba(171, 197, 255, 0.4);
     border: none;
