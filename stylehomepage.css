@@ -250,15 +250,18 @@ nav a:hover {
         opacity: 1;
     }
 } */
-/*手機設備*/
+
+
+
+/*手機設備
 @media (max-width: 480px) {
 .horizontal-menu .dropdown {
     display: block; 
-    /* 從display:none改為block，隱藏將使用transform */
+   
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
-    position: reletive; /*我把absolute改成reletive測試看看20240617*/
+    position: reletive; 
     top: 100%;
     left: -10px;
     background-color: rgba(255, 193, 231, 0.7);
@@ -269,4 +272,4 @@ nav a:hover {
     margin: 2px;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-} 
+} */
