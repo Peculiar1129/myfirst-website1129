@@ -7,7 +7,6 @@ body, html {
     box-sizing: border-box;
     overflow: hidden; /* Prevent scrolling */
 }
-
 /*年齡認證區塊*/
 .overlay {
     position: fixed;
@@ -21,8 +20,6 @@ body, html {
     align-items: center;
     z-index: 1000;
 }
-
-
 /*年齡認證區塊*/
 .popup {
     background: rgba(240, 240, 255, 0.7);
@@ -33,7 +30,6 @@ body, html {
     box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.8);
     font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
 }
-
 /*年齡認證區塊*/
 .popup button {
     font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
@@ -46,24 +42,30 @@ body, html {
     cursor: pointer;
     box-shadow: 6px 2px 10px rgba(0, 0, 0, 0.9);
 }
-
 /*年齡認證區塊*/
 .popup button:hover {
     background-color: rgba(240, 161, 255, 0.9);
 }
-
-
+/*背景大圖片大文字連結等等*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100vh;  /* Ensure hero takes full viewport height */
+    background: url('https://wallpapersmug.com/download/3840x2160/f4eae3/sunset-sky-mountains-beautiful.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background covers the entire hero */
+}
 /*ホームページ*/
 .titletop {
-    margin-top: 51px;
+    margin: 100px 50px 50px 50px;
     /*margin: 35px;*/
     font-size: 120px;
     white-space: nowrap;/*阻止換行*/
     text-shadow: 8px 8px 6px black;
-    z-index: 4;
 }
-
-
 /*FOLLOW MY BLABLABLA*/
 .linkbutton {
     padding: 15px 20px;
@@ -76,81 +78,60 @@ body, html {
     transition: background-color 0.3s;
     font-size: 50px;
     text-shadow: 3px 3px 4px black;
-    margin-top: 40px; /* Adjust margin as needed */
-    z-index: 4;
+    margin-bottom: 30px; /* Adjust margin as needed */
 }
-
-
 /*FOLLOW MY BLABLABLA EFFECT*/
 .linkbutton:hover {
     background-color: hsl(303, 100%, 88%);
 }
-
-
 .ani {
     opacity: 0;
     transform: translateY(35px);
     animation: moveup 0.4s linear forwards;
 }
-
 @keyframes moveup {
     100% {
         opacity: 1;
         transform: translateY(0px);
     }
 }
-
-
 /*導覽條*/
 nav {
     width: 100%;
     position: fixed;
     z-index: 2;
-    height: 130px;*/ /* Set the height of the menu */
+    height: 130px; /* Set the height of the menu */
 }
-
-
 /*導覽條*/
 nav a:hover {
     
     color: #ff69b4; 
 }
-
-
 /*導覽條位置與顏色*/
 .horizontal-menu {
     list-style: none;
-    padding: 0 0 999px 0;
+    padding: 0;
     margin: 0;
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     background-color: rgba(255, 199, 245, 0.5);
-    height: 100%; 
-    width: 120%;
+    height: 100%; /* Set the height to 100% */
     align-items: center; /* Center items vertically */
     font-family: 'Comic Sans MS', Trebuchet MS; /* Set the font */
-    z-index: 3;
 }
-
-
 .horizontal-menu li {
     position: relative;
     margin: 0 11px;
 }
-
-
 /*導覽條上面的文字*/
 .horizontal-menu a {
     text-decoration: none;
     padding: 15px;
     display: block;
 }
-
 .horizontal-menu .list01 a:hover {
-
     color: hsl(332, 98%, 51%);
 }
-
 /* Wrapper for horizontal menu to enable scrolling */
 .horizontal-menu-wrapper {
     overflow-x: auto;
@@ -160,30 +141,41 @@ nav a:hover {
 }
 
 
+    
+          
+            
+    
 
-/*最上層按鈕*/
+          
+          Expand Down
+    
+    
+  
+/* Horizontal menu styling */
+.horizontal-menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*白色按鈕*/
 .horizontal-menu .list01 {
     display: inline-block;
-    margin: 15px 13px 15px 15px; 
+    margin-right: 10px; 
     white-space: normal;
-    padding: 3px;
-    height: 100px;
+    padding: 1px;
+    height: 90px;
     background-color: hsl(332, 100%, 91%);/*方塊顏色*/
     box-shadow: 5px 2px 8px black inset;
-    border-radius: 13px;
-
+    border-radius: 10px;
 }
-
-
-/*按鈕的字*/
+/*白色按鈕的字*/
 .horizontal-menu .list01 a {
     text-decoration: none;
     font-size: 48px; /* Adjust font size as needed */
     text-shadow: 4px 0px 2px black;
     color: hsl(14, 3%, 99%); 
-
 }
-
 /* 下拉選單 */
 .horizontal-menu .dropdown {
     display: block; 
@@ -191,58 +183,35 @@ nav a:hover {
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
-    position: absolute;
+    position: absolute; /*我把absolute改成reletive測試看看20240617*/
     top: 100%;
     left: -10px;
+    background-color: rgba(255, 193, 231, 0.7);
+    border-radius: 15px;
+    list-style: none;
     padding: 0;
     width: 400%;
     margin: 2px;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-
 .horizontal-menu .dropdown li {
     width: 350px;
     padding: 17px;
     font-size: 20px;
-    background-color: rgba(255, 193, 231, 0.7);
-    border-radius: 3px;
-    list-style: none;
 }
-
 /* Show dropdown on hover */
 .horizontal-menu li:hover .dropdown {
     transform: scaleY(1);
     display: block;
     opacity: 1;
 }
-
 .list01 {
     text-shadow: 0 0 5px black;
 }
-
-
-/*背景大圖片大文字連結等等*/
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    height: 100vh;  /* Ensure hero takes full viewport height */
-    background: url('https://wallpapersmug.com/download/3840x2160/f4eae3/sunset-sky-mountains-beautiful.jpg') no-repeat center center;
-    background-size: cover; /* Ensure the background covers the entire hero */
-    z-index: 1;
-}
-
-
 .remove {
     color: inherit; 
     text-decoration: none;
 }
-
-
-
 /* 平板設備 
 @media (max-width: 768px) {
     .hero-text {
@@ -296,142 +265,23 @@ nav a:hover {
         opacity: 1;
     }
 } */
-/* 手機設備
+/*手機設備*/
 @media (max-width: 480px) {
-    .hero-text {
-        font-size: 125px; 
-    }
-    
-    .list01 {
-        font-size: 125px;
-        color: rgb(255, 26, 26);
-        margin-bottom: 20px;
-        text-shadow: 0 0 7px black;
-    }
-    .linkbutton {
-        padding: 10px 20px;
-        text-decoration: none;
-        color: white;
-        background-color: #FF79BC;
-        border-radius: 15px;
-        transition: background-color 0.3s;
-        font-size: 65px;
-    }
-    .linkbutton:hover {
-        background-color: #0056b3;
-    }
-
-    nav {
-    width: 100%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    height: 100px;
-}
-    
-    .horizontal-menu {
-        flex-direction: column; 
-        height: auto;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-   
-
- .horizontal-menu li {
-        margin: 5px 0; 
-    }
-    .horizontal-menu a {
-        font-size: 40px; 
-        padding: 10px; 
-    }
-       .horizontal-menu .dropdown {
-    display: none;
-    position: absolute;
+.horizontal-menu .dropdown {
+    display: block; 
+    /* 從display:none改為block，隱藏將使用transform */
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: reletive; /*我把absolute改成reletive測試看看20240617*/
     top: 100%;
-    left: 0;
-    background-color: rgba(100, 100, 100, 0.8);
-    border-radius: 5px;
+    left: -10px;
+    background-color: rgba(255, 193, 231, 0.7);
+    border-radius: 15px;
     list-style: none;
     padding: 0;
-    margin: 15px;
-    transition: opacity 0.5s ease-in-out;
+    width: 400%;
+    margin: 2px;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-    .horizontal-menu .dropdown li {
-        font-size: 30px; 
-        padding: 10px 0; 
-    }
-    .horizontal-menu .dropdown a {
-        font-size: 40px; 
-    }
-    .horizontal-menu li:hover .dropdown {
-        display: block;
-        opacity: 1;
-    }
-    .bottomleft {
-    position: absolute;
-    font-size: 20px;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    z-index: 1;
-    color: white;
-    text-shadow: 0 0 8px black;
-    font-family: 'Comic Sans MS', Trebuchet MS;
-    background-color: rgba(0, 0, 0, 0.5); 
-}
-    
-    
-.typing-container {
-    white-space: pre;
-    overflow: hidden;
-    border-right: .15em solid orange; 
-    width: fit-content;
-    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-
-.overlay {
-    position: fixed;
-    top: 0; q
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 229, 255, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-
-
-.popup {
-    background: rgba(240, 240, 255, 0.7);
-    padding: 65px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 60px;
-    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.8);
-    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
-}
-
-
-.popup button {
-    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
-    font-size: 55px;
-    background-color: rgba(171, 197, 255, 0.4);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin: 10px;
-    cursor: pointer;
-    box-shadow: 6px 2px 10px rgba(0, 0, 0, 0.9);
-}
-
-
-.popup button:hover {
-    background-color: rgba(240, 161, 255, 0.9);
-}
-}  */
+} 
