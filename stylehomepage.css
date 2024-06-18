@@ -192,3 +192,12 @@ nav a:hover {
     z-index: 1000; /* Ensure dropdown is on top */
 
 }
+
+/* 手機設備 */
+@media (max-width: 480px) {
+    body {
+  -webkit-touch-zoom: none;
+  -moz-touch-zoom: none;
+  touch-zoom: none;
+}   
+｝
