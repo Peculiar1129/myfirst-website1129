@@ -1,5 +1,3 @@
-/*如果出了任何差錯請返回這個版本*/
-
 /* HOMEPAGE */
 body, html {
     height: 100%;
@@ -97,52 +95,178 @@ body, html {
         transform: translateY(0px);
     }
 }
+/*導覽條*/
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    height: 130px; 
+    /* 
+    overflow: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; */
+    
+}
+/*導覽條*/
+nav a:hover {
+    
+    color: #ff69b4; 
 
-
-
-/* 父级菜单样式 */
+}
+/*導覽條位置與顏色*/
 .horizontal-menu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    background-color: rgba(255, 199, 245, 0.5);
+    height: 100%; /* Set the height to 100% */
+    align-items: center; /* Center items vertically */
+    font-family: 'Comic Sans MS', Trebuchet MS; /* Set the font */
+}
+.horizontal-menu li {
+    position: relative;
+    margin: 0 11px;
+}
+/*導覽條上面的文字*/
+.horizontal-menu a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.horizontal-menu .list01 a:hover {
+    color: hsl(332, 98%, 51%);
 }
 
+  
+/* Horizontal menu styling */
+.horizontal-menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/*白色按鈕*/
+.horizontal-menu .list01 {
+    display: inline-block;
+    margin-right: 10px; 
+    white-space: normal;
+    padding: 1px;
+    height: 90px;
+    background-color: hsl(332, 100%, 91%);/*方塊顏色*/
+    box-shadow: 5px 2px 8px black inset;
+    border-radius: 10px;
+}
+/*白色按鈕的字*/
+.horizontal-menu .list01 a {
+    text-decoration: none;
+    font-size: 48px; /* Adjust font size as needed */
+    text-shadow: 4px 0px 2px black;
+    color: hsl(14, 3%, 99%); 
+}
+/* 下拉選單 */
+.horizontal-menu .dropdown {
+    display: block; 
+    /* 從display:none改為block，隱藏將使用transform */
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute; /*我把absolute改成reletive測試看看20240617*/
+    top: 100%;
+    left: -10px;
+    background-color: rgba(255, 193, 231, 0.7);
+    border-radius: 15px;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    margin: 2px;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+.horizontal-menu .dropdown li {
+    width: 350px;
+    padding: 17px;
+    font-size: 20px;
+}
+/* Show dropdown on hover */
+.horizontal-menu li:hover .dropdown {
+    transform: scaleY(1);
+    display: block;
+    opacity: 1;
+}
 .list01 {
-  position: relative;
-  display: inline-block;
+    text-shadow: 0 0 5px black;
 }
-
-.list01 a {
-  text-decoration: none;
-  color: #000;
-  padding: 10px 15px;
-  display: block;
+/* 平板設備 
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 100px; 
+    }
+    
+    .list01 {
+        font-size: 125px;
+        color: rgb(255, 26, 26);
+        margin-bottom: 20px;
+        text-shadow: 0 0 7px black;
+    }
+    .linkbutton {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        background-color: #FF79BC;
+        border-radius: 21px;
+        transition: background-color 0.3s;
+        font-size: 65px;
+    }
+    .linkbutton:hover {
+        background-color: #0056b3;
+    }
+    .horizontal-menu {
+        flex-direction: column; 
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.8); 
+    }
+    .horizontal-menu li {
+        margin: 5px 0; 
+    }
+    .horizontal-menu a {
+        font-size: 35px; 
+        padding: 10px; 
+    }
+    .horizontal-menu .dropdown {
+        position: static;
+        background-color: rgba(0, 0, 0, 0.8); 
+        opacity: 1;
+    }
+    .horizontal-menu .dropdown li {
+        font-size: 30px; 
+        padding: 10px 0; 
+    }
+    .horizontal-menu .dropdown a {
+        font-size: 30px; 
+    }
+    .horizontal-menu li:hover .dropdown {
+        display: block;
+        opacity: 1;
+    }
+} */
+/*手機設備*/
+@media (max-width: 480px) {
+.horizontal-menu .dropdown {
+    display: block; 
+    /* 從display:none改為block，隱藏將使用transform */
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: reletive; /*我把absolute改成reletive測試看看20240617*/
+    top: 100%;
+    left: -10px;
+    background-color: rgba(255, 193, 231, 0.7);
+    border-radius: 15px;
+    list-style: none;
+    padding: 0;
+    width: 400%;
+    margin: 2px;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  max-width: 300px; 
-  white-space: nowrap; 
-  overflow-x: auto; 
-}
-
-.list01:hover .dropdown {
-  display: block;
-}
-
-.dropdown a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {
-  background-color: #f1f1f1;
-}
+} 
