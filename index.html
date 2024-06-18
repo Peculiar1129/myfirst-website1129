@@ -7,63 +7,53 @@
 </head>
 <body>
     <div id="age-verification" class="overlay">
-    <div class="popup">
-        <p>Are you 18+?</p>
-        <button onclick="verifyAge(true)">YES</button>
-        <button onclick="verifyAge(false)">NO</button>
+        <div class="popup">
+            <p>Are you 18+?</p>
+            <button onclick="verifyAge(true)">YES</button>
+            <button onclick="verifyAge(false)">NO</button>
+        </div>
     </div>
-</div>
 
-    
-    <!-- 最上面導覽頁先div再nav-->
-    
     <nav>
-         <!-- 姑且停用這個div，因為啟用之後會有Dropdown表無法開啟等問題。-->
-       
-        <ul class="horizontal-menu">
-            <li class="list01"><a href="#" class="remove">2D/2.5D</a>
-                <ul class="dropdown">
-                    <li><a href="CartoonAndAnime.html">Classic 2D/2.5D</a></li>
-                    <li><a href="Cartoon_anime_character.html">Anime Character</a></li>
-                </ul>
-            </li>
-            <li class="list01"><a href="#">Realistic</a>
-                <ul class="dropdown">
-                    <li><a href="Realistic.html">Classic Realistic</a></li>
-                    <li><a href="animecharacter.html">Anime Character-R</a></li>
-                </ul>
-            </li>
-            <li class="list01"><a href="#" class="remove">Oldschool</a>
-                <ul class="dropdown">
-                    <li><a href="Oldschool.html">Classic Oldschool</a></li>
-                    <li><a href="#">To Be Added</a></li>
-                </ul>
-            </li>
-            <li class="list01"><a href="#" class="remove">Horror</a>
-                <ul class="dropdown">
-                    <li><a href="horror.html">Classic Horror</a></li>
-                    <li><a href="#">To Be Added</a></li>
-                </ul>
-            </li>
-            <li class="list01"><a href="https://drive.google.com/drive/folders/1jYAUy0IDwk1cLavYJ-TQC2RkUWVRiGun?usp=sharing" target="_blank" class="remove">Imgs</a></li>
-        </ul>
-            </nav>
-                
-    
-    
-  
-    <!-- Main content -->
+        <div class="horizontal-menu-container">
+            <ul class="horizontal-menu">
+                <li class="list01"><a href="#" class="remove">2D/2.5D</a>
+                    <ul class="dropdown">
+                        <li><a href="CartoonAndAnime.html">Classic 2D/2.5D</a></li>
+                        <li><a href="Cartoon_anime_character.html">Anime Character</a></li>
+                    </ul>
+                </li>
+                <li class="list01"><a href="#">Realistic</a>
+                    <ul class="dropdown">
+                        <li><a href="Realistic.html">Classic Realistic</a></li>
+                        <li><a href="animecharacter.html">Anime Character-R</a></li>
+                    </ul>
+                </li>
+                <li class="list01"><a href="#" class="remove">Oldschool</a>
+                    <ul class="dropdown">
+                        <li><a href="Oldschool.html">Classic Oldschool</a></li>
+                        <li><a href="#">To Be Added</a></li>
+                    </ul>
+                </li>
+                <li class="list01"><a href="#" class="remove">Horror</a>
+                    <ul class="dropdown">
+                        <li><a href="horror.html">Classic Horror</a></li>
+                        <li><a href="#">To Be Added</a></li>
+                    </ul>
+                </li>
+                <li class="list01"><a href="https://drive.google.com/drive/folders/1jYAUy0IDwk1cLavYJ-TQC2RkUWVRiGun?usp=sharing" target="_blank" class="remove">Imgs</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="hero">
         <h1 class="titletop ani box01">ホームページ</h1>
         <a href="https://civitai.com/user/Kurushash999" target="_blank" class="linkbutton ani">Follow my Civitai</a>
         <a href="https://twitter.com/Peculia73797280" target="_blank" class="linkbutton ani">Follow my X/Twitter</a>
-        
     </div>
-    <!-- Typing effect text -->
     <div class="bottomleft typing-container">
         <p id="typing-text"></p>
     </div>
-    <!-- Typing effect script -->
     <script src="script.js"></script>
 </body>
 </html>
