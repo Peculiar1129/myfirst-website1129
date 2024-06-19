@@ -252,7 +252,7 @@ nav a:hover {
         left: 0;
         width: 100%;
         z-index: 1000;
-        max-height: 400px;
+        max-height: 600px;
         overflow-y: auto;
     }
 
@@ -265,7 +265,7 @@ nav a:hover {
     .dropdown-menu a {
         text-decoration: none;
         color: rgba(255, 149, 245, 1);
-        text-shadow: 3px 1px 1px black;
+        text-shadow: 2px 0px 3px black;
         font-size: 35px;
         padding: 10px 0;
     }
@@ -300,14 +300,13 @@ nav a:hover {
     }
 
     .popup {
-        padding: 50px;
-        font-size: 35px;
+        padding: 30px;
+        font-size: 30px;
     }
 
     .popup button {
-        padding: 8px 13px;
-        font-size: 30px;
-        
+        font-size: 25px;
+        padding: 5px 10px;
     }
 
     /*.dropdown-menu {
@@ -377,7 +376,7 @@ nav a:hover {
         left: 0;
         width: 100%;
         z-index: 1000;
-        max-height: 400px;
+        max-height: 750px;
         overflow-y: auto;
     }
 
@@ -390,7 +389,7 @@ nav a:hover {
     .dropdown-menu a {
         text-decoration: none;
         color: rgba(255, 149, 245, 1);
-        text-shadow: 3px 1px 1px black;
+        text-shadow: 2px 0px 3px black;v
         font-size: 35px;
         padding: 10px 0;
     }
