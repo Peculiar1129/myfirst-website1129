@@ -105,7 +105,6 @@ body, html {
 nav {
     width: 100%;
     position: absolute;
-    z-index: 2;
     height: 130px; 
     background-color: rgba(255, 199, 245, 0.5); /* Set background color for the navbar */
     z-index: 998; /* Ensure dropdown is on top */
@@ -142,44 +141,49 @@ nav a:hover {
 /*導覽條上面的文字*/
 .horizontal-menu a {
     text-decoration: none;
-    padding: 15px;
+    padding: 19px;
     display: rgba(255, 199, 245,);
+    font-size: 50px; /* Adjust font size as needed */
 }
 
 .horizontal-menu .list01 a:hover {
     color: hsl(332, 98%, 51%);
 }
+
 /*白色按鈕*/
 .horizontal-menu .list01 {
     display: inline-block;
     margin-right: 10px; 
     white-space: normal;
-    padding: 1px;
+    padding: 12px 1px 1px 1px;/*方塊padding*/      
     height: 90px;
     background-color: hsl(332, 100%, 91%); /*方塊顏色*/
     box-shadow: 5px 2px 8px black inset;
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
 /*白色按鈕的字*/
 .horizontal-menu .list01 a {
     text-decoration: none;
-    font-size: 48px; /* Adjust font size as needed */
-    text-shadow: 4px 0px 2px black;
+    text-shadow: 6px 0px 4px black;
     color: hsl(14, 3%, 99%); 
+    font-weight: bold;
 }
+
 /* 下拉選單 */
 .horizontal-menu .dropdown {
     display: none;
-    position: reletive;
+    position: absolute;
     top: 100%;
-    left: 0;
+    left: -4px;
     background-color: rgba(255, 193, 231, 0.7);
     border-radius: 15px;
     list-style: none;
     padding: 0;
-    margin: 2px;
+    margin: 4px;
     z-index: 9999; /* Ensure dropdown is on top */
 }
+
 .horizontal-menu .dropdown li {
     width: 350px;
     padding: 17px;
@@ -190,11 +194,6 @@ nav a:hover {
 /* Show dropdown on hover */
 .horizontal-menu li:hover .dropdown {
     display: block;
-}
-.list01 {
-    text-shadow: 0 0 5px black;
-    z-index: 1000; /* Ensure dropdown is on top */
-
 }
 
 
@@ -208,6 +207,8 @@ nav a:hover {
     height: 60px; 
     background-color: rgba(255, 199, 245, 0.5); 
 }
+
+    
 /*導覽條*/
 nav a:hover {
     color: #ff69b4;
@@ -239,7 +240,7 @@ nav a:hover {
         transition: 0.4s;
     }
 
-    /* 移动设备下的下拉菜单 */
+    /* 下拉菜單 */
     .dropdown-menu {
         display: none;
         flex-direction: column;
@@ -253,9 +254,11 @@ nav a:hover {
         z-index: 1000;
     }
 
+
     .dropdown-menu.open {
-        display: flex;
+       display: flex;
     }
+  
 
     .dropdown-menu a {
         text-decoration: none;
@@ -264,6 +267,8 @@ nav a:hover {
         padding: 10px 0;
     }
 
+
+    
     .hamburger-menu.open div:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 5px);
     }
@@ -300,8 +305,13 @@ nav a:hover {
         padding: 5px 10px;
     }
 
+    /*.dropdown-menu {
+        font-size: 99px;
+        padding: 10px 0;
+    }*/
+
     .dropdown-menu a {
-        font-size: 18px;
+        font-size: 35px;
         padding: 10px 0;
     }
 
