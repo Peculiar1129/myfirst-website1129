@@ -246,13 +246,13 @@ nav a:hover {
         flex-direction: column;
         justify-content: space-around;
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 229, 254, 0.9);
         position: absolute;
         top: 50px;
         left: 0;
         width: 100%;
         z-index: 1000;
-        max-height: 750px;
+        max-height: 600px;
         overflow-y: auto;
     }
 
@@ -320,3 +320,128 @@ nav a:hover {
         background-size: cover;
     }
 }
+
+/* 平板設備 */
+@media (max-width: 768px) {
+
+     nav {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    height: 60px; 
+    background-color: rgba(255, 199, 245, 0.5); 
+}
+
+    
+/*導覽條*/
+nav a:hover {
+    color: #ff69b4;
+}
+
+    
+    /* 隐藏桌面版导航条 */
+    .horizontal-menu-container {
+        display: none;
+    }
+
+    /* 显示汉堡菜单 */
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1001;
+    }
+
+    .hamburger-menu div {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 1px;
+        padding: 0;
+        transition: 0.4s;
+    }
+
+    /* 下拉菜單 */
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: rgba(255, 229, 254, 0.9);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+
+
+    .dropdown-menu.open {
+        display: flex;
+    }
+  
+
+    .dropdown-menu a {
+        text-decoration: none;
+        color: rgba(255, 199, 245, 1);
+        text-shadow: 2px 2px 0.8px black;
+        font-size: 35px;
+        padding: 10px 0;
+    }
+
+
+
+    
+    .hamburger-menu.open div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .hamburger-menu.open div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.open div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    /* ホームページ */
+    .titletop {
+        margin: 40px 20px 30px 20px;
+        font-size: 55px;
+        white-space: normal;
+    }
+
+    /*CIVITAI X/TWITTER*/
+    .linkbutton {
+        padding: 10px 15px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .popup {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .popup button {
+        font-size: 25px;
+        padding: 5px 10px;
+    }
+
+    /*.dropdown-menu {
+        font-size: 99px;
+        padding: 10px 0;
+    }*/
+
+
+
+    .hero {
+        background-size: cover;
+    }
+}
+
