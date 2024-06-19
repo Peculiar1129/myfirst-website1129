@@ -200,6 +200,20 @@ nav a:hover {
 
 /* 手機設備手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備  */
 @media (max-width: 480px) {
+
+    nav {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    height: 60px; 
+    background-color: rgba(255, 199, 245, 0.5); 
+}
+/*導覽條*/
+nav a:hover {
+    color: #ff69b4;
+}
+
+    
     /* 隐藏桌面版导航条 */
     .horizontal-menu-container {
         display: none;
@@ -264,7 +278,7 @@ nav a:hover {
     /* ホームページ */
     .titletop {
         margin: 40px 20px 30px 20px;
-        font-size: 30px;
+        font-size: 55px;
         white-space: normal;
     }
 
