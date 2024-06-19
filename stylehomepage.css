@@ -252,7 +252,7 @@ nav a:hover {
         left: 0;
         width: 100%;
         z-index: 1000;
-        max-height: 550px;
+        max-height: 400px;
         overflow-y: auto;
     }
 
