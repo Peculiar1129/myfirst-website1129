@@ -202,53 +202,96 @@ nav a:hover {
 
 /* 手機設備 */
 @media (max-width: 480px) {
+    /* 隐藏桌面版导航条 */
     .horizontal-menu-container {
-        display: none; /* Hide horizontal menu on small screens */
+        display: none;
     }
+
+    /* 显示汉堡菜单 */
     .hamburger-menu {
-        display: flex; /* Show hamburger menu on small screens */
+        display: flex;
         flex-direction: column;
         cursor: pointer;
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 10px;
+        left: 10px;
         z-index: 1001;
     }
+
     .hamburger-menu div {
-        width: 35px;
-        height: 5px;
+        width: 25px;
+        height: 3px;
         background-color: #333;
-        margin: 6px 0;
+        margin: 4px 0;
         transition: 0.4s;
     }
+
+    /* 移动设备下的下拉菜单 */
     .dropdown-menu {
         display: none;
         flex-direction: column;
         justify-content: space-around;
-        padding: 20px;
+        padding: 10px;
         background-color: rgba(255, 255, 255, 0.9);
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
         z-index: 1000;
     }
+
     .dropdown-menu.open {
-        display: flex; /* Show dropdown menu when open */
+        display: flex;
     }
+
     .dropdown-menu a {
         text-decoration: none;
         color: black;
-        font-size: 22px;
+        font-size: 18px;
         padding: 10px 0;
     }
+
     .hamburger-menu.open div:nth-child(1) {
-        transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-5px, 5px);
     }
+
     .hamburger-menu.open div:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger-menu.open div:nth-child(3) {
-        transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    /* 调整字体大小和间距 */
+    .titletop {
+        margin: 40px 20px 30px 20px;
+        font-size: 40px;
+        white-space: normal;
+    }
+
+    .linkbutton {
+        padding: 10px 15px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .popup {
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .popup button {
+        font-size: 25px;
+        padding: 5px 10px;
+    }
+
+    .dropdown-menu a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        background-size: cover;
     }
 }
