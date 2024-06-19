@@ -264,8 +264,8 @@ nav a:hover {
 
     .dropdown-menu a {
         text-decoration: none;
-        color: rgba(255, 199, 245, 1);
-        text-shadow: 2px 2px 0.8px black;
+        color: rgba(255, 149, 245, 1);
+        text-shadow: 3px 1px 1px black;
         font-size: 35px;
         padding: 10px 0;
     }
@@ -321,8 +321,7 @@ nav a:hover {
     }
 }
 
-/* 平板設備 平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  平板設備  */
-
+/* 平板設備 */
 @media (max-width: 768px) {
 
      nav {
@@ -389,8 +388,8 @@ nav a:hover {
 
     .dropdown-menu a {
         text-decoration: none;
-        color: rgba(255, 199, 245, 1);
-        text-shadow: 2px 2px 0.8px black;
+        color: rgba(255, 149, 245, 1);
+        text-shadow: 3px 1px 1px black;
         font-size: 35px;
         padding: 10px 0;
     }
@@ -445,4 +444,3 @@ nav a:hover {
         background-size: cover;
     }
 }
-
