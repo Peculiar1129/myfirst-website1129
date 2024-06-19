@@ -1,22 +1,30 @@
+<!--20240619更新版本-->
+
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ホームページ</title>
-    <link rel="stylesheet" type="text/css" href="stylehomepage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Verification and Menu Example</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="age-verification" class="overlay">
         <div class="popup">
-            <p>Are you 18+?</p>
-            <button onclick="verifyAge(true)">YES</button>
-            <button onclick="verifyAge(false)">NO</button>
+            <p>Are you 18 years or older?</p>
+            <button onclick="verifyAge(true)">Yes</button>
+            <button onclick="verifyAge(false)">No</button>
         </div>
     </div>
 
     <nav>
+        <div id="menuButton" class="hamburger-menu" onclick="toggleMenu(this)">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div class="horizontal-menu-container">
-            <ul class="horizontal-menu">
+            <ul class="horizontal-menu hidden">
                 <li class="list01"><a href="#" class="remove">2D/2.5D</a>
                     <ul class="dropdown">
                         <li><a href="CartoonAndAnime.html">Classic 2D/2.5D</a></li>
@@ -44,16 +52,43 @@
                 <li class="list01"><a href="https://drive.google.com/drive/folders/1jYAUy0IDwk1cLavYJ-TQC2RkUWVRiGun?usp=sharing" target="_blank" class="remove">Imgs</a></li>
             </ul>
         </div>
+        <div class="dropdown-menu">
+            <a href="#">2D/2.5D</a>
+            <ul class="dropdown">
+                <li><a href="CartoonAndAnime.html">Classic 2D/2.5D</a></li>
+                <li><a href="Cartoon_anime_character.html">Anime Character</a></li>
+            </ul>
+            <a href="#">Realistic</a>
+            <ul class="dropdown">
+                <li><a href="Realistic.html">Classic Realistic</a></li>
+                <li><a href="animecharacter.html">Anime Character-R</a></li>
+            </ul>
+            <a href="#">Oldschool</a>
+            <ul class="dropdown">
+                <li><a href="Oldschool.html">Classic Oldschool</a></li>
+                <li><a href="#">To Be Added</a></li>
+            </ul>
+            <a href="#">Horror</a>
+            <ul class="dropdown">
+                <li><a href="horror.html">Classic Horror</a></li>
+                <li><a href="#">To Be Added</a></li>
+            </ul>
+            <a href="https://drive.google.com/drive/folders/1jYAUy0IDwk1cLavYJ-TQC2RkUWVRiGun?usp=sharing" target="_blank" class="remove">Imgs</a>
+        </div>
     </nav>
 
     <div class="hero">
-        <h1 class="titletop ani box01">ホームページ</h1>
-        <a href="https://civitai.com/user/Kurushash999" target="_blank" class="linkbutton ani">Follow my Civitai</a>
-        <a href="https://twitter.com/Peculia73797280" target="_blank" class="linkbutton ani">Follow my X/Twitter</a>
+        <h1 class="titletop ani">ホームページ</h1>
+        <a href="https://civitai.com/user/Kurushash999" target="_blank" class="linkbutton ani">My Civitai</a>
+        <a href="https://twitter.com/Peculia73797280" target="_blank" class="linkbutton ani">X/Twitter</a>
     </div>
-    <div class="bottomleft typing-container">
-        <p id="typing-text"></p>
-    </div>
+
+    <button class="back-to-top">Back to Top</button>
+
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
