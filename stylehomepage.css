@@ -300,13 +300,14 @@ nav a:hover {
     }
 
     .popup {
-        padding: 30px;
-        font-size: 30px;
+        padding: 50px;
+        font-size: 35px;
     }
 
     .popup button {
-        font-size: 25px;
-        padding: 5px 10px;
+        padding: 8px 13px;
+        font-size: 30px;
+        
     }
 
     /*.dropdown-menu {
