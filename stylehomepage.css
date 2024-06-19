@@ -1,3 +1,12 @@
+/* 20240619更新版本 */
+
+
+
+.hamburger-menu,
+.dropdown-menu {
+    display: none;
+}
+
 /* HOMEPAGE */
 body, html {
     height: 100%;
@@ -103,8 +112,6 @@ nav {
     height: 130px; 
     background-color: rgba(255, 199, 245, 0.5); /* Set background color for the navbar */
     z-index: 998; /* Ensure dropdown is on top */
-
-    
 }
 /*導覽條*/
 nav a:hover {
@@ -195,9 +202,53 @@ nav a:hover {
 
 /* 手機設備 */
 @media (max-width: 480px) {
-    body {
-  -webkit-touch-zoom: none;
-  -moz-touch-zoom: none;
-  touch-zoom: none;
-}   
-｝
+    .horizontal-menu-container {
+        display: none; /* Hide horizontal menu on small screens */
+    }
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on small screens */
+        flex-direction: column;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+    }
+    .hamburger-menu div {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    .dropdown-menu.open {
+        display: flex; /* Show dropdown menu when open */
+    }
+    .dropdown-menu a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        padding: 10px 0;
+    }
+    .hamburger-menu.open div:nth-child(1) {
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .hamburger-menu.open div:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.open div:nth-child(3) {
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
