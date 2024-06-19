@@ -1,3 +1,6 @@
+//20240619更新版本
+
+// Function to verify age
 function verifyAge(isOfAge) {
     if (isOfAge) {
         document.getElementById('age-verification').style.display = 'none';
@@ -7,15 +10,16 @@ function verifyAge(isOfAge) {
     }
 }
 
+// Show age verification on page load
 window.onload = function() {
     document.getElementById('age-verification').style.display = 'flex';
 };
 
-/*age-verify-function*/
+// Back to top button functionality
 var backToTopButton = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', function() {
-    if (window.scrollY > 200) { // 當滾動超過200像素時顯示按鈕
+    if (window.scrollY > 200) { // Show button when scrolled 200px
         backToTopButton.style.display = 'block';
     } else {
         backToTopButton.style.display = 'none';
@@ -26,7 +30,7 @@ window.addEventListener('scroll', function() {
     var buttonRect = backToTopButton.getBoundingClientRect();
     var windowHeight = window.innerHeight;
 
-    if (footerRect.top < windowHeight) { // 當 footer 可見時調整按鈕位置
+    if (footerRect.top < windowHeight) { // Adjust button position when footer is visible
         backToTopButton.style.bottom = (windowHeight - footerRect.top + 20) + 'px';
     } else {
         backToTopButton.style.bottom = '20px';
@@ -41,6 +45,7 @@ backToTopButton.addEventListener('click', function(e) {
     });
 });
 
+// Toggle hamburger menu
 const menuButton = document.getElementById('menuButton');
 const horizontalMenu = document.querySelector('.horizontal-menu');
 
@@ -48,3 +53,8 @@ menuButton.addEventListener('click', () => {
   horizontalMenu.classList.toggle('hidden');
 });
 
+// Function to toggle dropdown menu in mobile view
+function toggleMenu(x) {
+    x.classList.toggle("open");
+    document.querySelector(".dropdown-menu").classList.toggle("open");
+}
