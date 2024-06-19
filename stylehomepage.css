@@ -1,7 +1,4 @@
-/* 20240619更新版本 */
-
-
-
+/* Default hidden styles for mobile-specific elements */
 .hamburger-menu,
 .dropdown-menu {
     display: none;
@@ -200,7 +197,8 @@ nav a:hover {
 
 }
 
-/* 手機設備 */
+
+/* 手機設備手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備  */
 @media (max-width: 480px) {
     /* 隐藏桌面版导航条 */
     .horizontal-menu-container {
@@ -263,13 +261,14 @@ nav a:hover {
         transform: rotate(45deg) translate(-5px, -5px);
     }
 
-    /* 调整字体大小和间距 */
+    /* ホームページ */
     .titletop {
         margin: 40px 20px 30px 20px;
-        font-size: 40px;
+        font-size: 20px;
         white-space: normal;
     }
 
+    /*CIVITAI X/TWITTER*/
     .linkbutton {
         padding: 10px 15px;
         font-size: 20px;
