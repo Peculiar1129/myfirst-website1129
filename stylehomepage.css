@@ -264,14 +264,14 @@ nav a:hover {
     /* ホームページ */
     .titletop {
         margin: 40px 20px 30px 20px;
-        font-size: 20px;
+        font-size: 30px;
         white-space: normal;
     }
 
     /*CIVITAI X/TWITTER*/
     .linkbutton {
         padding: 10px 15px;
-        font-size: 20px;
+        font-size: 30px;
         margin-bottom: 20px;
     }
 
