@@ -132,7 +132,6 @@ nav a:hover {
     margin: 0;
     list-style: none;
     align-items: center;
-
 }
 
 
@@ -144,8 +143,9 @@ nav a:hover {
 .horizontal-menu a {
     text-decoration: none;
     padding: 15px;
-    display: block;
+    display: rgba(255, 199, 245,);
 }
+
 .horizontal-menu .list01 a:hover {
     color: hsl(332, 98%, 51%);
 }
@@ -231,10 +231,11 @@ nav a:hover {
     }
 
     .hamburger-menu div {
-        width: 25px;
+        width: 30px;
         height: 3px;
         background-color: #333;
-        margin: 4px 0;
+        margin: 5px 1px;
+        padding: 0;
         transition: 0.4s;
     }
 
@@ -258,8 +259,8 @@ nav a:hover {
 
     .dropdown-menu a {
         text-decoration: none;
-        color: black;
-        font-size: 18px;
+        color: rgba(255, 199, 245, 1);
+        text-shadow: 2px 2px 0.8px black;
         padding: 10px 0;
     }
 
