@@ -197,7 +197,7 @@ nav a:hover {
 }
 
 
-/* 手機設備手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備  */
+/* 手機設備手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備  */
 @media (max-width: 480px) {
 
     nav {
@@ -264,10 +264,15 @@ nav a:hover {
 
     .dropdown-menu a {
         text-decoration: none;
-        color: rgba(255, 149, 245, 1);
         text-shadow: 2px 0px 3px black;
         font-size: 35px;
-        padding: 10px 0;
+    }
+
+
+    .dropdown li a {
+
+
+        color:white;
     }
 
 
@@ -309,12 +314,6 @@ nav a:hover {
         padding: 5px 10px;
     }
 
-    /*.dropdown-menu {
-        font-size: 99px;
-        padding: 10px 0;
-    }*/
-
-
 
     .hero {
         background-size: cover;
@@ -325,7 +324,7 @@ nav a:hover {
 
 @media (max-width: 768px) {
 
-     nav {
+    nav {
     width: 100%;
     position: absolute;
     z-index: 2;
@@ -389,10 +388,15 @@ nav a:hover {
 
     .dropdown-menu a {
         text-decoration: none;
-        color: rgba(255, 149, 245, 1);
-        text-shadow: 2px 0px 3px black;v
+        text-shadow: 2px 0px 3px black;
         font-size: 35px;
-        padding: 10px 0;
+    }
+
+
+    .dropdown li a {
+
+
+        color:white;
     }
 
 
@@ -433,12 +437,6 @@ nav a:hover {
         font-size: 25px;
         padding: 5px 10px;
     }
-
-    /*.dropdown-menu {
-        font-size: 99px;
-        padding: 10px 0;
-    }*/
-
 
 
     .hero {
