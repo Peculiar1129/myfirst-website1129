@@ -72,6 +72,8 @@ body, html {
     white-space: nowrap; /*阻止換行*/
     text-shadow: 8px 8px 6px black;
 }
+
+
 /*X/TWITTER*/
 .linkbutton {
     padding: 15px 20px;
@@ -83,9 +85,12 @@ body, html {
     border-radius: 8px;
     transition: background-color 0.3s;
     font-size: 50px;
+    font-weight: bold;
     text-shadow: 3px 3px 4px black;
     margin-bottom: 30px; /* Adjust margin as needed */
 }
+
+
 /*X/TWITTER EFFECT*/
 .linkbutton:hover {
     background-color: hsl(303, 100%, 88%);
@@ -259,7 +264,8 @@ nav a:hover {
 
     .dropdown-menu.open {
         display: flex;
-        padding: 35px 20px 20px 20px;
+        padding: 55px 20px 20px 20px;
+        margin: 10px 0 0 0;
     }
   
 
@@ -399,6 +405,7 @@ nav a:hover {
     .dropdown-menu.open {
         display: flex;
         padding: 35px 20px 20px 20px;
+        margin: 10px 0 0 0;
     }
   
 
@@ -406,7 +413,8 @@ nav a:hover {
         text-decoration: none;
         text-shadow: 2px 0px 3px black;
         font-size: 35px;
-        color: rgba(255, 150, 253,1)
+        color: rgba(255, 150, 253,1);
+        font-weight: bold;
     }
 
 
