@@ -203,7 +203,7 @@ nav a:hover {
 
 
 /* 手機設備手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備  */
-@media (max-width: 480px) {
+@media (max-width: 480px)  {
 
     nav {
     width: 100%;
@@ -261,44 +261,44 @@ nav a:hover {
         overflow-y: auto;
     }
 
+        .dropdown-menu a {
+        text-decoration: none;
+        text-shadow: 2px 0px 3px black;
+        font-size: 35px;
+        color: rgba(255, 150, 253,1);
+        font-weight: bold;
+    }
+
+    
+    /*使標題維持一樣顏色就算在hover*/
+        .dropdown-menu a:hover {
+
+        color: rgba(255, 150, 253,1)
+    }
+
 
     .dropdown-menu.open {
         display: flex;
         padding: 55px 20px 20px 20px;
         margin: 10px 0 0 0;
-    }
-  
-
-    .dropdown-menu a {
-        text-decoration: none;
-        text-shadow: 2px 0px 3px black;
-        font-size: 35px;
-        color: rgba(255, 150, 253,1)
-    }
+    } 
 
 
-        .dropdown-menu a:hover {
-
-        color: rgba(255, 150, 253,1)
-    }
-    
-
-
+    /*表單的選項超連結到別的html*/
     .dropdown li a {
 
-
         color:white;
+        font-weight: normal;
     }
 
         .dropdown li a:hover {
-
 
         color:rgba(254, 80, 255,1);
     }
 
 
 
-     /*漢堡菜單*/
+    /*漢堡菜單*/
     .hamburger-menu.open div:nth-child(1) {
         transform: rotate(-45deg) translate(-7px, 12px);
     }
@@ -401,15 +401,7 @@ nav a:hover {
         overflow-y: auto;
     }
 
-
-    .dropdown-menu.open {
-        display: flex;
-        padding: 35px 20px 20px 20px;
-        margin: 10px 0 0 0;
-    }
-  
-
-    .dropdown-menu a {
+        .dropdown-menu a {
         text-decoration: none;
         text-shadow: 2px 0px 3px black;
         font-size: 35px;
@@ -417,22 +409,29 @@ nav a:hover {
         font-weight: bold;
     }
 
-
+    
+    /*使標題維持一樣顏色就算在hover*/
         .dropdown-menu a:hover {
 
         color: rgba(255, 150, 253,1)
     }
-    
 
 
+    .dropdown-menu.open {
+        display: flex;
+        padding: 35px 20px 20px 20px;
+        margin: 10px 0 0 0;
+    } 
+
+
+    /*表單的選項超連結到別的html*/
     .dropdown li a {
 
-
         color:white;
+        font-weight: normal;
     }
 
         .dropdown li a:hover {
-
 
         color:rgba(254, 80, 255,1);
     }
