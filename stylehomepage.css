@@ -266,7 +266,15 @@ nav a:hover {
         text-decoration: none;
         text-shadow: 2px 0px 3px black;
         font-size: 35px;
+        color: rgba(255, 150, 253,1)
     }
+
+
+        .dropdown-menu a:hover {
+
+        color: rgba(255, 150, 253,1)
+    }
+    
 
 
     .dropdown li a {
@@ -275,17 +283,23 @@ nav a:hover {
         color:white;
     }
 
+        .dropdown li a:hover {
 
 
-    
+        color:rgba(254, 80, 255,1);
+    }
+
+
+
+    /*漢堡菜單*/
     .hamburger-menu.open div:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 5px);
     }
-
+    /*漢堡菜單*/
     .hamburger-menu.open div:nth-child(2) {
         opacity: 0;
     }
-
+    /*漢堡菜單*/
     .hamburger-menu.open div:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -5px);
     }
