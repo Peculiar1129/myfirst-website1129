@@ -1,487 +1,297 @@
-/* 手機版本隱藏菜單 */
-.hamburger-menu,
-.dropdown-menu {
-    display: none;
-}
-
-/* HOMEPAGE */
-body, html {
-    height: 100%;
-    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
+/*REALISTIC*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+  body {
+  /* 使用漸層背景 */
+  background: linear-gradient(to right, #FF8DF8	, #8DE1FF);
+  /* 設置背景顏色作為漸層失效時的後備 */
+  background-color: #ff8c00;
+  /* 讓背景填滿整個頁面 */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* 讓文字顯示在最上層 */
+  z-index: -1;
+}
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative; /* 確保內部絕對定位元素相對於hero容器定位 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 使容器高度填滿視窗 */
     overflow: hidden;
 }
-/*年齡認證區塊*/
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
+/* 背景影片設置 */
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 229, 255, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1555;
+    object-fit: cover; 
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    filter: brightness(0) invert(1);
 }
-/*年齡認證區塊*/
-.popup {
-    background: rgba(240, 240, 255, 0.7);
-    padding: 65px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 60px;
-    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.8);
-    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
-    z-index: 1555; 
+img {
+  min-width: 15%;  
+  max-width: 50%;
+  height: auto;
+  width: 250px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin: 15px;
+  transition: transform 0.3s ease; /* 添加平滑過渡效果 */
 }
-/*年齡認證區塊*/
-.popup button {
-    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
-    font-size: 55px;
-    background-color: rgba(171, 197, 255, 0.4);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin: 10px;
-    cursor: pointer;
-    box-shadow: 6px 2px 10px rgba(0, 0, 0, 0.9);
+img:hover {
+    transform: scale(1.09); /* 在滑鼠懸停時放大110% */
+    border: 7px solid rgba(255, 120, 190, 0.8); /* 添加至少8px的白色半透明邊框 */
+    box-shadow: 0 0 10px rgba(255, 120, 190, 0.8); /* 添加模糊效果 */
+    filter: brightness(1.1); /* 提高曝光度（亮度）10% */
 }
-/*年齡認證區塊*/
-.popup button:hover {
-    background-color: rgba(240, 161, 255, 0.9);
+/* 確保 .hero-img 樣式定義在通用 img 樣式之後 */
+.hero .hero-img {
+  width: 100% !important; /* 覆蓋通用 img 樣式 */
+  height: 100% !important; /* 覆蓋通用 img 樣式 */
+  max-width: none !important; /* 覆蓋通用 img 樣式 */
+  min-width: 0 !important; /* 覆蓋通用 img 樣式 */
+  border-radius: 0 !important; /* 移除圓角效果 */
+  margin: 0 !important; /* 移除 margin */
+  object-fit: cover; /* 讓圖片覆蓋容器，可能被裁切 */
+  object-position: center; /* 圖片居中 */
+  position: absolute;
 }
-/*背景大圖片大文字連結等等*/
-.hero {
+/* 覆蓋 .hero-img 的懸停效果 */
+.hero .hero-img:hover {
+    transform: none; /* 移除縮放效果 */
+    border: none; /* 添加白色邊框 */
+    filter: none; /* 提高曝光度（亮度）10% */
+}
+/* .image:hover img {
+        filter: brightness(130%); */
+/*CHAT GPT FIX*/
+.overlay-content {
+    position: absolute;
+    bottom: 20px;
+    /*left: 20px;*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    height: 100vh;  
-    background: url('https://wallpapersmug.com/download/3840x2160/f4eae3/sunset-sky-mountains-beautiful.jpg') no-repeat center center;
-    background-size: cover; 
+    gap: 10px;
+    width: 100%; /* 確保覆蓋整個寬度 */
+    align-items: center; /* 讓內容在水平中心對齊 */
 }
-
-/*ホームページ*/
-.titletop {
-    margin: 80px 40px 55px 40px;
-    font-size: 120px;
-    white-space: nowrap; /*阻止換行*/
-    text-shadow: 8px 8px 6px black;
-}
-
-
-/*X/TWITTER*/
-.linkbutton {
-    padding: 20px 25px;
+.overlay-content a {
     text-decoration: none;
-    font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
-    color: white; /*字體顏色*/
-    background-color: hsl(303, 100%, 84%); /*橫條的背景顏色*/
-    box-shadow: 4px 3px 5px rgba(0, 0, 0, 1) inset;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    font-size: 55px;
-    font-weight: bold;
-    text-shadow: 3px 3px 4px black;
-    margin-bottom: 33px; 
+    font-size: 25px;
+    color: #FFFFFF; /* 白色文字 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* 增加過渡效果 */
 }
-
-
-/*X/TWITTER EFFECT*/
-.linkbutton:hover {
-    background-color: hsl(303, 100%, 88%);
+.overlay-content a:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* 懸停時背景顏色變深 */
+    animation: flash 0.3s; /* 懸停時觸發閃爍動畫 */
 }
-
-
-.ani {
-    opacity: 0;
-    transform: translateY(35px);
-    animation: moveup 0.4s linear forwards;
+   
+    .highlight{
+          text-shadow: 0 0 8px yellow;
+          font-weight: bold;
+          font-size: xx-large;
+          font-family: 'Comic Sans MS', sans-serif;
+          margin: 10px;
+          
+          
+      }
+      .positive{
+          text-shadow: 0 0 8px green;
+          font-weight: bold;
+          font-size: 55px;
+          margin: 10px;
+          font-family: 'Comic Sans MS', sans-serif;
+      }
+      .negative{
+          text-shadow: 0 0 8px red;
+          font-weight: bold;
+          font-size: 55px;
+          margin: 10px;
+          font-family: 'Comic Sans MS', sans-serif;
 }
-
-@keyframes moveup {
+    .maintitle {
+      font-weight: bold;
+      font-family: Georgia, sans-serif;
+    }
+.content{
+      font-size: 25px;
+      font-family: 'Comic Sans MS', sans-serif;
+      border: 7px solid #FCFCFC;
+      padding: 20px;
+      margin: 15px;
+}
+header{
+  background-color: hsl(100,5%,100%);
+  text-align: center;
+  padding: 5px;
+  opacity: 0.8;
+}
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
     100% {
         opacity: 1;
-        transform: translateY(0px);
     }
 }
-/*導覽條*/
-nav {
-    width: 100%;
-    position: absolute;
-    height: 130px; 
-    background-color: rgba(255, 199, 245, 0.5); 
-    z-index: 998; 
+header {
+    display: none; /* 隱藏header，因為連結已移入hero */
 }
+.test{
+  text-decoration: none;
+  color: #0066aa;
+  display: block;
+  padding: 0 20px;
+  font-size: 17px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+}
+footer{
 
-/*導覽條*/
-nav a:hover {
-    color: #ff69b4;
-}
-/*導覽條位置與顏色*/
-.horizontal-menu-container {
-    position: reletive;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    z-index: 998; 
-    overflow-x: auto;
-}
-
-/*包含所有框框*/
-.horizontal-menu {
-    position: absolute; 
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    align-items: center;
+  background-color: hsl(100,5%,100%);
+  text-align: center;
+  padding: 4px;
+  opacity: 0.8;
+  font-size: 21px;
 }
 
 
-.horizontal-menu li {
-    position: relative;
-    margin: 0 11px;
-}
-/*導覽條上面的文字*/
-.horizontal-menu a {
-    text-decoration: none;
-    padding: 19px;
-    display: rgba(255, 199, 245,);
-    font-size: 50px; 
-}
 
-.horizontal-menu .list01 a:hover {
-    color: hsl(336, 100%, 65%);
-}
+    
+          
+            
+    
 
-/*白色按鈕*/
-.horizontal-menu .list01 {
-    display: inline-block;
-    margin-right: 10px; 
-    white-space: normal;
-    padding: 12px 1px 1px 1px;/*方塊padding*/      
-    height: 90px;
-    background-color: hsl(332, 100%, 91%); /*方塊顏色*/
-    box-shadow: 5px 2px 8px black inset;
-    border-radius: 15px;
+          
+          Expand Down
+    
+    
+  
+.testimg{
+  max-width: 100%; 
+  height: auto;
 }
-
-/*白色按鈕的字*/
-.horizontal-menu .list01 a {
-    text-decoration: none;
-    text-shadow: 6px 0px 5px black;
-    color: hsl(14, 3%, 99%); 
-    font-weight: bold;
+.ani{
+  opacity: 0;
+  transform: translateY(35px);
+  animation: moveup 0.5s linear forwards;    
 }
-
-/* 下拉選單 */
-.horizontal-menu .dropdown {
+@keyframes moveup{
+  100%{
+  opacity:1;
+  transform: translateY(0px);
+  }
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     display: none;
-    position: absolute;
-    top: 100%;
-    left: -4px;
-    background-color: rgba(255, 193, 231, 0.7);
-    border-radius: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 2px;
-    z-index: 9999; 
+    background-color: #ff7aff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 15px;
+    z-index: 1000; /* 設置較高的 z-index */
 }
-
-.horizontal-menu .dropdown li {
-    width: 350px;
-    padding: 8px 0px 25px 25px;
-    font-size: 20px;
-    z-index: 9999; 
-
+.back-to-top:hover {
+    background-color: #555;
 }
-/* Show dropdown on hover */
-.horizontal-menu li:hover .dropdown {
-    display: block;
-}
-
-
-/* 手機設備手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備手機設備 手機設備 手機設備 手機設備  */
-@media (max-width: 480px)  {
-
-    nav {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    height: 60px; 
-    background-color: rgba(255, 199, 245, 0.7); 
-}
-
-    
-/*導覽條*/
-nav a:hover {
-    color: #ff69b4;
-}
-
-    
-    /* 隱藏桌面版 */
-    .horizontal-menu-container {
-        display: none;
-    }
-
-    /* MENU菜單 */
-    .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 1001;
-    }
-
-    .hamburger-menu div {
-        width: 30px;
-        height: 3px;
-        background-color: #333;
-        margin: 5px 1px;
-        padding: 0;
-        transition: 0.4s;
-    }
-
-    /* 下拉菜單 */
-    .dropdown-menu {
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 10px;
-        background-color: rgba(255, 229, 254, 0.9);
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        max-height: 300px;
-        overflow-y: auto;
-    }
-
-        .dropdown-menu a {
-        text-decoration: none;
-        text-shadow: 2px 0px 3px black;
-        font-size: 35px;
-        color: rgba(255, 150, 253,1);
-        font-weight: bold;
-    }
-
-    
-    /*使標題維持一樣顏色就算在hover*/
-        .dropdown-menu a:hover {
-
-        color: rgba(255, 150, 253,1)
-    }
-
-
-    .dropdown-menu.open {
-        display: flex;
-        padding: 55px 20px 20px 20px;
-        margin: 10px 0 0 0;
-    } 
-
-
-    /*表單的選項超連結到別的html*/
-    .dropdown li a {
-
-        color:white;
-        font-weight: normal;
-    }
-
-        .dropdown li a:hover {
-
-        color:rgba(254, 80, 255,1);
-    }
-
-
-
-    /*漢堡菜單*/
-    .hamburger-menu.open div:nth-child(1) {
-        transform: rotate(-45deg) translate(-7px, 12px);
-    }
-    /*漢堡菜單*/
-    .hamburger-menu.open div:nth-child(2) {
-        opacity: 0;
-    }
-    /*漢堡菜單*/
-    .hamburger-menu.open div:nth-child(3) {
-        transform: rotate(45deg) translate(-6px, -12px);
-    }
-
-    /* ホームページ */
-    .titletop {
-        margin: 40px 20px 30px 20px;
-        font-size: 55px;
-        white-space: normal;
-    }
-
-    /*CIVITAI X/TWITTER*/
-    .linkbutton {
-        padding: 10px 15px;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .popup {
-        padding: 50px;
-        font-size: 30px;
-    }
-
-    .popup button {
-        font-size: 30px;
-        padding: 10px 15px;
-    }
-
-
-    .hero {
-        background-size: cover;
-    }
-}
-
-/* 平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備平板設備 */
-
+/* 響應式設計 */
 @media (max-width: 768px) {
-
-    nav {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    height: 60px; 
-    background-color: rgba(255, 199, 245, 0.7); 
-}
-
+    .logo,
+    .homepage {
+        font-size: 18px; /* 調整字體大小 */
+    }
     
-/*導覽條*/
-nav a:hover {
-    color: #ff69b4;
-}
-
+    .back-to-top {
+        padding: 8px;
+        font-family: 'Comic Sans MS', sans-serif;
+        font-size: 10px; /* 調整按鈕字體大小 */
+    }
     
-    /* 隱藏桌面版 */
-    .horizontal-menu-container {
-        display: none;
-    }
-
-    /* MENU菜單 */
-    .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 1001;
-    }
-
-    .hamburger-menu div {
-        width: 30px;
-        height: 3px;
-        background-color: #333;
-        margin: 5px 1px;
-        padding: 0;
-        transition: 0.4s;
-    }
-
-    /* 下拉菜單 */
-    .dropdown-menu {
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 10px;
-        background-color: rgba(255, 229, 254, 0.9);
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        max-height: 300px;
-        overflow-y: auto;
-    }
-
-        .dropdown-menu a {
-        text-decoration: none;
-        text-shadow: 2px 0px 3px black;
-        font-size: 35px;
-        color: rgba(255, 150, 253,1);
-        font-weight: bold;
-    }
-
-    
-    /*使標題維持一樣顏色就算在hover*/
-        .dropdown-menu a:hover {
-
-        color: rgba(255, 150, 253,1)
-    }
-
-
-    .dropdown-menu.open {
-        display: flex;
-        padding: 35px 20px 20px 20px;
-        margin: 10px 0 0 0;
-    } 
-
-
-    /*表單的選項超連結到別的html*/
-    .dropdown li a {
-
-        color:white;
-        font-weight: normal;
-    }
-
-        .dropdown li a:hover {
-
-        color:rgba(254, 80, 255,1);
-    }
-
-
-
-    /*漢堡菜單*/
-    .hamburger-menu.open div:nth-child(1) {
-        transform: rotate(-45deg) translate(-7px, 12px);
-    }
-    /*漢堡菜單*/
-    .hamburger-menu.open div:nth-child(2) {
-        opacity: 0;
-    }
-    /*漢堡菜單*/
-    .hamburger-menu.open div:nth-child(3) {
-        transform: rotate(45deg) translate(-6px, -12px);
-    }
-
-    /* ホームページ */
-    .titletop {
-        margin: 40px 20px 30px 20px;
-        font-size: 55px;
-        white-space: normal;
-    }
-
-    /*CIVITAI X/TWITTER*/
-    .linkbutton {
-        padding: 10px 15px;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    .popup {
-        padding: 50px;
-        font-size: 30px;
-    }
-
-    .popup button {
-        font-size: 30px;
-        padding: 10px 15px;
-    }
-
-
     .hero {
-        background-size: cover;
+        min-height: 70vh; /* 調整hero部分高度 */
     }
+}
+/* 手機設備 */
+@media (max-width: 480px) {
+    .logo,
+    .homepage {
+        font-size: 12px; /* 進一步調整字體大小 */
+    }
+    
+    .back-to-top {
+        padding: 6px;
+        font-family: 'Comic Sans MS', sans-serif;
+        font-size: 20px; /* 進一步調整按鈕字體大小 */
+        border-radius: 7px;
+    }
+    
+    .hero {
+        min-height: 60vh; /* 進一步調整hero部分高度 */
+    }
+  .highlight {
+    font-size: 20px;
+  }
+  .positive{
+        font-size: 16px;
+  }
+  .negative {
+      font-size: 16px;
+  }
+  .content {
+    font-size: 14px;
+  }
+      img {
+      width: 150px;
+      border-radius: 15px;
+      margin: 8px;
+    }
+}
+.blur-load {
+    width: 100%;
+    max-width: 600px; /* 可根據需求調整圖片大小 */
+    filter: blur(20px);
+    transition: filter 1s ease;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.blur-load.loaded {
+    filter: blur(0px);
+    opacity: 1;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
 }
