@@ -92,7 +92,7 @@ img:hover {
 }
 .overlay-content a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 50px;
     color: #FFFFFF; /* 白色文字 */
     background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
     padding: 10px 15px;
