@@ -84,6 +84,7 @@ img:hover {
     position: absolute;
     bottom: 20px;
     /*left: 20px;*/
+    margin: 0 0 20px 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -170,8 +171,8 @@ header {
   height: 50px;
   line-height: 50px;
 }
-footer{
 
+footer{
   background-color: hsl(100,5%,100%);
   text-align: center;
   padding: 4px;
@@ -183,17 +184,20 @@ footer{
   max-width: 100%; 
   height: auto;
 }
+
 .ani{
   opacity: 0;
   transform: translateY(35px);
   animation: moveup 0.5s linear forwards;    
 }
+
 @keyframes moveup{
   100%{
   opacity:1;
   transform: translateY(0px);
   }
 }
+
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -206,12 +210,14 @@ footer{
     border-radius: 9px;
     text-decoration: none;
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     z-index: 1000; /* 設置較高的 z-index */
 }
+
 .back-to-top:hover {
     background-color: #555;
 }
+
 /* 響應式設計 */
 @media (max-width: 768px) {
     .logo,
