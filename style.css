@@ -218,22 +218,46 @@ footer{
     background-color: #555;
 }
 
-/* 響應式設計 */
+/* 平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置平板裝置 */
 @media (max-width: 768px) {
     .logo,
     .homepage {
         font-size: 18px; /* 調整字體大小 */
     }
-    
-    .back-to-top {
-        padding: 8px;
-        font-family: 'Comic Sans MS', sans-serif;
-        font-size: 10px; /* 調整按鈕字體大小 */
-    }
-    
+       
     .hero {
         min-height: 70vh; /* 調整hero部分高度 */
     }
+
+      .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ff7aff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 25px;
+    z-index: 1000; /* 設置較高的 z-index */
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
+
+        .overlay-content a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF; /* 白色文字 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* 增加過渡效果 */
+}
 }
 /* 手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備 */
 @media (max-width: 480px) {
