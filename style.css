@@ -235,7 +235,7 @@ footer{
         min-height: 70vh; /* 調整hero部分高度 */
     }
 }
-/* 手機設備 */
+/* 手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備 */
 @media (max-width: 480px) {
     .logo,
     .homepage {
@@ -252,6 +252,17 @@ footer{
     .hero {
         min-height: 60vh; /* 進一步調整hero部分高度 */
     }
+
+    .overlay-content a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF; /* 白色文字 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* 增加過渡效果 */
+}
+    
   .highlight {
     font-size: 20px;
   }
