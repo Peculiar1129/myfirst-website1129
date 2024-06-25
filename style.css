@@ -258,6 +258,14 @@ footer{
     border-radius: 5px;
     transition: all 0.3s ease; /* 增加過渡效果 */
 }
+
+    footer{
+  background-color: hsl(100,5%,100%);
+  text-align: center;
+  padding: 4px;
+  opacity: 0.8;
+  font-size: 18px;
+}   
 }
 /* 手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備手機設備 */
 @media (max-width: 480px) {
@@ -266,13 +274,7 @@ footer{
         font-size: 12px; /* 進一步調整字體大小 */
     }
     
-    .back-to-top {
-        padding: 6px;
-        font-family: 'Comic Sans MS', sans-serif;
-        font-size: 20px; /* 進一步調整按鈕字體大小 */
-        border-radius: 7px;
-    }
-    
+   
     .hero {
         min-height: 60vh; /* 進一步調整hero部分高度 */
     }
@@ -299,7 +301,7 @@ footer{
     border-radius: 9px;
     text-decoration: none;
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 25px;
+    font-size: 12px;
     z-index: 1000; /* 設置較高的 z-index */
 }
 
@@ -343,4 +345,12 @@ footer{
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 10px;
+}
+    footer{
+  background-color: hsl(100,5%,100%);
+  text-align: center;
+  padding: 4px;
+  opacity: 0.8;
+  font-size: 18px;
+    }
 }
