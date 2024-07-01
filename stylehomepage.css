@@ -63,6 +63,7 @@ body, html {
     color: white;
     height: 100vh;  
     background: url('homepage20240622.png') no-repeat center center;
+    /*https://www.cleankisslifestyle.com/cdn/shop/articles/316942-blue-sky-with-clouds.jpg?v=1605136872.png*/
     background-size: cover; 
 }
 
@@ -82,8 +83,8 @@ body, html {
     font-family: "Comic Sans MS", Trebuchet MS, sans-serif;
     color: white; /*字體顏色*/
     background-color: hsl(303, 100%, 84%); /*橫條的背景顏色*/
-    box-shadow: 4px 3px 5px rgba(0, 0, 0, 1) inset;
-    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8) inset, 7px 5px 5px rgba(50, 50, 50, 0.4);
+    border-radius: 5px;
     transition: background-color 0.3s;
     font-size: 55px;
     font-weight: bold;
@@ -169,13 +170,14 @@ nav a:hover {
     height: 90px;
     background-color: hsl(332, 100%, 91%); /*方塊顏色*/
     box-shadow: 5px 2px 8px black inset;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 /*白色按鈕的字*/
 .horizontal-menu .list01 a {
     text-decoration: none;
-    text-shadow: 6px 0px 5px black;
+    text-shadow: 5px 0px 5px black;
+    padding:15px 15px 10px 15px;
     color: hsl(14, 3%, 99%); 
     font-weight: bold;
 }
@@ -185,21 +187,19 @@ nav a:hover {
     display: none;
     position: absolute;
     top: 100%;
-    left: -4px;
+    text-align:left;
     background-color: rgba(255, 193, 231, 0.7);
-    border-radius: 15px;
+    border-radius: 9px;
     list-style: none;
     padding: 0;
     margin: 1px;
-    z-index: 9999; 
 }
 
 .horizontal-menu .dropdown li {
     width: 350px;
-    padding: 8px 0px 25px 25px;
+    padding: 8px 0px 25px 20px;
     font-size: 20px;
-    z-index: 9999; 
-
+    
 }
 /* Show dropdown on hover */
 .horizontal-menu li:hover .dropdown {
