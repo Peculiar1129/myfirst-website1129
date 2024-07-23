@@ -128,6 +128,7 @@ nav a:hover {
 .horizontal-menu-container {
     position: reletive;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     height: 100%;
     z-index: 998; 
@@ -169,14 +170,14 @@ nav a:hover {
     padding: 12px 1px 1px 1px;/*方塊padding*/      
     height: 90px;
     background-color: hsl(332, 100%, 91%); /*方塊顏色*/
-    box-shadow: 5px 2px 8px black inset;
+    /**/box-shadow: 2px 0px 10px #ffc9f3 inset;
     border-radius: 5px;
 }
 
 /*白色按鈕的字*/
 .horizontal-menu .list01 a {
     text-decoration: none;
-    text-shadow: 5px 0px 5px black;
+    text-shadow: 5px 0px 5px #2e2e2e;
     padding:15px 15px 10px 15px;
     color: hsl(14, 3%, 99%); 
     font-weight: bold;
